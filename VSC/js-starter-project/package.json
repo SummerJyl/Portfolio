@@ -1,0 +1,10 @@
+{
+  "name": "js-starter-project",
+  "version": "1.0.0",
+  "description": "JavaScript starter boilerplate",
+  "scripts": {
+    "dev": "echo 'No build tool yet. Ready to add Vite, Webpack, or Parcel!'",
+    "lint": "eslint ."
+  },
+  "devDependencies": {}
+}
