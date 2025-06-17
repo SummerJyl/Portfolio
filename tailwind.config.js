@@ -7,14 +7,13 @@ module.exports = {
 
   theme: {
   extend: {
-    colors: {
-      emerald: {
-        600: '#059669', // or your custom emerald shade
-      },
-    },
-    fontFamily: {
-      lato: ['Lato', 'sans-serif'],
+  colors: {
+    sage: {
+      light: '#EAE7DC',
+      DEFAULT: '#A8B5A2',
+      dark: '#6F7963',
     },
   },
-},
+}
+}
 }

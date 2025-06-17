@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ContactModal from './components/ContactModal';
 import ScreenshotGallery from './components/ScreenshotGallery';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import AccordionCard from './components/AccordionCard';
 
 export default function App() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -77,11 +78,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen text-gray-900 max-w-5xl mx-auto px-6 py-10 font-lato bg-sage">
-      {/* Navbar */}
-<nav className="flex flex-col items-center justify-center mb-10 md:flex-row md:justify-between md:items-center px-6 py-4 border-b border-gray-300">
-  <h1 className="text-2xl font-bold text-center mb-2 md:mb-0 text-emerald-600 font-lato">
-  Jylian Summers | Web Developer
-</h1>
+
+{/* Navbar */}
+<nav className="flex flex-col md:flex-row md:justify-between items-center px-6 py-4 border-b border-gray-300">
+  <h1 className="text-2xl font-bold text-emerald-600 font-lato text-center md:text-left">
+    Jylian Summers
+  </h1>
+  <div className="flex gap-4 mt-2 md:mt-0">
+  </div>
+
   <div className="flex items-center space-x-4 text-emerald-700">
   <button
     onClick={() => setContactOpen(true)}
@@ -112,87 +117,45 @@ export default function App() {
 
 </nav>
 
-      {/* Navbar
-      <nav className="flex items-center justify-between mb-10">
-        <h1 className="text-2xl font-bold">Jylian Summers</h1>
-        <div className="flex space-x-4 items-center">
-          <a
-            href="https://github.com/yourgithubhandle"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
-          >
-            GitHub
-          </a>
-          <button
-            onClick={() => setContactOpen(true)}
-            className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition"
-          >
-            Contact
-          </button>
-        </div>
-      </nav> */}
-
-     {/* Hero */}
-<section
-  className="text-center mb-16 bg-cover bg-center bg-no-repeat py-16 px-4 rounded-lg"
-  style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg-hero.png)` }}
->
+{/* Hero */}
+<section className="text-center mb-16">
   <img
     src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
     alt="Jylian Summers"
     className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
   />
-  <h2 className="text-3xl font-semibold text-emerald-800">Web Developer & Bio Health Enthusiast</h2>
-  <p className="mt-2 text-gray-800 max-w-xl mx-auto bg-white/70 p-2 rounded">
+  <h2 className="text-3xl font-semibold">Bio Health Enthusiast</h2>
+  <p className="mt-2 text-gray-600 max-w-xl mx-auto">
     Purpose-driven technologist passionate about building engaging web experiences.
   </p>
 </section>
 
-
-      {/* Projects */}
-<section className="mb-16">
-  <h3 className="text-xl font-semibold mb-6 border-b-2 border-emerald-700 inline-block text-emerald-700">
-    Projects
-  </h3>
+{/* With this: */}
+<AccordionCard title="Projects">
   <ScreenshotGallery projects={projects} />
-</section>
+</AccordionCard>
+<AccordionCard title="Experience">
+  {/* Replace with your actual experience content */}
+  <ul className="list-disc pl-6 text-left">
+    <li>Senior Full-Stack Developer – React & Spring Boot</li>
+    <li>Digital Marketing Manager – HubSpot & SEO Strategy</li>
+    <li>Global Digital Activation Manager – 45+ React/Node Sites</li>
+    <li>UX / WebShop Manager – SQL & Front-End Leadership</li>
+  </ul>
+</AccordionCard>
 
-      {/* Experience */}
-      <section className="mb-16">
-  <h3 className="text-xl font-semibold mb-6 border-b-2 border-emerald-700 inline-block text-emerald-700">
-          Experience
-        </h3>
-        {experience.map((job, idx) => (
-          <div key={idx} className="mb-6">
-            <h4 className="font-semibold">{job.title}</h4>
-            <p className="text-sm text-gray-600 mb-2">{job.date}</p>
-            <ul className="list-disc list-inside text-gray-700 space-y-1">
-              {job.bullets.map((bullet, i) => (
-                <li key={i}>{bullet}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </section>
-
-      {/* Skills */}
-<section className="mb-16">
-  <h3 className="text-xl font-semibold mb-6 border-b-2 border-emerald-700 inline-block text-emerald-700">
-    Skills
-  </h3>
-  <div className="flex flex-wrap gap-3">
-    {skills.map((skill, idx) => (
-      <span
-        key={idx}
-        className="bg-green-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium"
-      >
+<AccordionCard title="Tech Stack">
+  <div className="flex flex-wrap gap-2 justify-center">
+    {[
+      'React', 'JavaScript', 'Tailwind CSS', 'Node.js', 'MongoDB', 'HubSpot',
+      'WordPress', 'Figma', 'Git', 'SEO', 'Google Analytics'
+    ].map(skill => (
+      <span key={skill} className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
         {skill}
       </span>
     ))}
   </div>
-</section>
-
+</AccordionCard>
 
       {/* Contact Modal */}
       {contactOpen && <ContactModal onClose={() => setContactOpen(false)} />}
