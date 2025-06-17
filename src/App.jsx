@@ -1,108 +1,328 @@
 import React, { useState } from 'react';
+import ContactModal from './components/ContactModal';
+import ScreenshotGallery from './components/ScreenshotGallery';
 
-function App() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function App() {
+  const [contactOpen, setContactOpen] = useState(false);
+
+  const projects = [
+    {
+      title: "Personal Finance Dashboard",
+      imgSrc: "/screenshots/responsive-pfd.jpeg",
+      description: "A React-based dashboard for managing personal finances.",
+      url: "https://yourlivepfdlink.com",
+    },
+    {
+      title: "Bio Health Data Explorer",
+      imgSrc: "/screenshots/responsive-bhde.png",
+      description: "Interactive data explorer for Bio Health projects.",
+      url: "https://yourlivebiohealthlink.com",
+    },
+    {
+      title: "Login Page",
+      imgSrc: "/screenshots/responsive-login.jpeg",
+      description: "Clean, modern login page built with React.",
+      url: "https://yourliveloginpage.com",
+    },
+  ];
+
+  const experience = [
+    {
+      title: "Senior Full-Stack Developer | ReactJS + Spring Boot",
+      company: "Self-Employed",
+      date: "2019 - Present",
+      bullets: [
+        "Designed and developed scalable React applications with Spring Boot backends.",
+        "Improved app performance by 20% through optimized code and caching.",
+        "Led client projects with agile methodologies and daily standups.",
+      ],
+    },
+    {
+      title: "Digital Marketing Manager (Contract) | Aquent",
+      date: "Mar 2022 - Mar 2023",
+      bullets: [
+        "Managed inbound marketing campaigns using HubSpot.",
+        "Tracked and improved campaign KPIs with Google Analytics.",
+        "Built segmented lists and workflows to nurture leads.",
+      ],
+    },
+    {
+      title: "Global Digital Activation Manager | Aquent",
+      date: "Oct 2020 - Jun 2021",
+      bullets: [
+        "Managed 45+ React/Node.js eCommerce sites.",
+        "Implemented RESTful APIs and test-driven development.",
+        "Collaborated with designers to improve UX/UI.",
+      ],
+    },
+    {
+      title: "UX Manager / WebShop Manager",
+      date: "Jun 2017 - Dec 2018",
+      bullets: [
+        "Oversaw design and development of modular UI components.",
+        "Supported SQL backend reporting and analytics.",
+        "Improved user engagement by 25% through form redesign.",
+      ],
+    },
+  ];
+
+  const skills = [
+    "ReactJS", "JavaScript", "Tailwind CSS", "Node.js",
+    "Spring Boot", "MongoDB", "REST APIs", "Agile",
+  ];
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 p-6 max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gray-50 text-gray-900 max-w-5xl mx-auto px-6 py-10 font-sans">
+      {/* Navbar */}
+<nav className="flex flex-col items-center justify-center mb-10 md:flex-row md:justify-between md:items-center px-6 py-4 border-b border-gray-300">
+  <h1 className="text-2xl font-bold text-center mb-2 md:mb-0">
+    Jylian Summers | Web Developer
+  </h1>
+  <div className="flex items-center space-x-4">
+    <button
+      onClick={() => setContactOpen(true)}
+      className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition"
+    >
+      Contact
+    </button>
+    <a
+      href="https://github.com/SummerJyl"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline"
+    >
+      GitHub
+    </a>
+    <a
+      href="https://www.linkedin.com/in/jyliansummers/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline"
+    >
+      LinkedIn
+    </a>
+  </div>
+</nav>
 
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white flex justify-end items-center gap-6 px-6 py-4 shadow-sm border-b text-sm font-medium text-gray-700">
-        <button
-          onClick={() => setIsOpen(true)}
-          className="hover:text-emerald-600 transition duration-200"
-        >
-          Contact Me
-        </button>
-
-        <a
-          href="https://github.com/SummerJyl"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-emerald-600 transition duration-200"
-        >
-          GitHub
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/jyliansummers/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-emerald-600 transition duration-200"
-        >
-          LinkedIn
-        </a>
-    </nav>
-  
-    {/* Hero Image */}
-    <img
-      src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
-      alt="Jylian Summers"
-      className="my-8 rounded-lg shadow-lg mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-    />
-
-      {/* Hero Section */}
-      <section className="text-center mt-12">
-        <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-        <p className="text-gray-600 max-w-xl mx-auto">
-          I’m a Senior Front-End Developer with 8+ years of experience building fast, scalable, and accessible web applications. My core strengths lie in React and TypeScript, supported by back-end experience in Java and Spring Boot, and deployment in AWS cloud environments.
-
-          I specialize in crafting responsive, user-centered interfaces that bring design systems to life and drive real business impact. From architecting modern frontend solutions to integrating APIs and optimizing performance, I thrive at the intersection of design, development, and data.
-
-          Whether leading projects or collaborating cross-functionally, I bring a detail-oriented, problem-solving mindset to every build. My work includes complex UI systems, mobile-first experiences, and secure, enterprise-grade applications.
-        </p>
-        </section>
-
-      {/* Skills Section */}
-      <section className="mt-16">
-        <h2 className="text-2xl font-semibold mb-4 text-center">Skills</h2>
-        <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-800">
-          <span className="px-3 py-1 bg-white rounded border shadow-sm">React</span>
-          <span className="px-3 py-1 bg-white rounded border shadow-sm">JavaScript</span>
-          <span className="px-3 py-1 bg-white rounded border shadow-sm">HTML</span>
-          <span className="px-3 py-1 bg-white rounded border shadow-sm">CSS</span>
-          <span className="px-3 py-1 bg-white rounded border shadow-sm">TailwindCSS</span>
-          <span className="px-3 py-1 bg-white rounded border shadow-sm">GitHub</span>
-            <span className="px-3 py-1 bg-white rounded border shadow-sm">UI/UX</span>
-          </div>
-        </section>
-      {/* Experience Section */}
-      <section className="mt-16">
-        <h2 className="text-2xl font-semibold mb-4 text-center">Experience</h2>
-        <div className="space-y-6 max-w-3xl mx-auto">
-          <div>
-            <h3 className="text-lg font-semibold">Front-End & Fullstack Web Developer (Consultant)</h3>
-            <p className="text-sm text-gray-600">Jan 2019 – Present, San Diego, CA</p>
-            <ul className="list-disc ml-5 mt-2 text-sm text-gray-700">
-              <li>Implemented and maintained front-end web applications using React.js.</li>
-              <li>Reduced page load speeds by 20% and improved conversion rates.</li>
-              <li>Collaborated on a user-friendly sign-up form, increasing engagement by 25%.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold">Digital Marketing Manager (Contract)</h3>
-            <p className="text-sm text-gray-600">Mar 2022 – Mar 2023, Aquent</p>
-            <ul className="list-disc ml-5 mt-2 text-sm text-gray-700">
-              <li>Developed and executed digital marketing strategies for various clients.</li>
-              <li>Increased organic traffic by 30% through SEO and content marketing.</li>
-              <li>Managed social media campaigns, boosting engagement by 40%.</li>
-            </ul>
-          </div>
-
-          <div>
-              <div>
-                <h3 className="text-lg font-semibold">Global Digital Activation Manager (Contract)</h3>
-                <p className="text-sm text-gray-600">Mar 2022 – Mar 2023, Aquent</p>
-                <ul className="list-disc ml-5 mt-2 text-sm text-gray-700">
-                  <li>Curated, developed, and managed content to enhance the brand’s online presence and engagement.</li>
-                  <li>Expanded content volume and diversity aligned with global brand strategy and consumer insights to deliver real-time brand storytelling.</li>
-                  <li>Managed social media campaigns, boosting engagement by 40%.</li>
-                </ul>
-              </div>
-            </div>
+      {/* Navbar
+      <nav className="flex items-center justify-between mb-10">
+        <h1 className="text-2xl font-bold">Jylian Summers</h1>
+        <div className="flex space-x-4 items-center">
+          <a
+            href="https://github.com/yourgithubhandle"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            GitHub
+          </a>
+          <button
+            onClick={() => setContactOpen(true)}
+            className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition"
+          >
+            Contact
+          </button>
         </div>
-                </section>
-            </div>
-          );
-      }
+      </nav> */}
+
+      {/* Hero */}
+      <section className="text-center mb-16">
+        <img
+          src="/images/li-pix.jpg"
+          alt="Jylian Summers"
+          className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+        />
+        <h2 className="text-3xl font-semibold">Web Developer & Bio Health Enthusiast</h2>
+        <p className="mt-2 text-gray-600 max-w-xl mx-auto">
+          Purpose-driven technologist passionate about building engaging web experiences.
+        </p>
+      </section>
+
+      {/* Projects */}
+      <section className="mb-16">
+        <h3 className="text-xl font-semibold mb-6 border-b-2 border-blue-600 inline-block">
+          Projects
+        </h3>
+        <ScreenshotGallery projects={projects} />
+      </section>
+
+      {/* Experience */}
+      <section className="mb-16">
+        <h3 className="text-xl font-semibold mb-6 border-b-2 border-blue-600 inline-block">
+          Experience
+        </h3>
+        {experience.map((job, idx) => (
+          <div key={idx} className="mb-6">
+            <h4 className="font-semibold">{job.title}</h4>
+            <p className="text-sm text-gray-600 mb-2">{job.date}</p>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
+              {job.bullets.map((bullet, i) => (
+                <li key={i}>{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+
+      {/* Skills */}
+      <section className="mb-16">
+        <h3 className="text-xl font-semibold mb-6 border-b-2 border-blue-600 inline-block">
+          Skills
+        </h3>
+        <div className="flex flex-wrap gap-3">
+          {skills.map((skill, idx) => (
+            <span
+              key={idx}
+              className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact Modal */}
+      {contactOpen && <ContactModal onClose={() => setContactOpen(false)} />}
+    </div>
+  );
+}
+
+// Import other components like Skills, ContactModal as needed
+
+// function App() {
+//   return (
+//     <div className="max-w-5xl mx-auto p-6 bg-gray-50 min-h-screen">
+//       <Hero />
+//       <Projects />
+//       <Experience />
+//       {/* Skills Section */}
+//       <section className="mt-16">
+//         <h2 className="text-2xl font-semibold mb-4 text-center">Skills</h2>
+//         <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-800">
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">React</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">JavaScript</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">HTML</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">CSS</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">TailwindCSS</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">GitHub</span>
+//             <span className="px-3 py-1 bg-white rounded border shadow-sm">UI/UX</span>
+//           </div>
+//         </section>
+//       {/* Add Skills and ContactModal here when ready */}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// function App() {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   return (
+//     <div className="min-h-screen bg-gray-50 text-gray-900 max-w-7xl mx-auto px-6">
+//       {/* Navigation */}
+//       <nav className="sticky top-0 z-50 bg-white flex justify-end items-center gap-6 py-4 shadow-sm border-b text-sm font-medium text-gray-700">
+//         <button
+//           onClick={() => setIsOpen(true)}
+//           className="hover:text-emerald-600 transition duration-200"
+//         >
+//           Contact Me
+//         </button>
+//         <a
+//           href="https://github.com/SummerJyl"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="hover:text-emerald-600 transition duration-200"
+//         >
+//           GitHub
+//         </a>
+//         <a
+//           href="https://www.linkedin.com/in/jyliansummers/"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="hover:text-emerald-600 transition duration-200"
+//         >
+//           LinkedIn
+//         </a>
+//       </nav>
+
+//       {/* Hero Section */}
+//       <section className="mt-12 flex flex-col md:flex-row items-start gap-8">
+//         {/* Image on the left */}
+//         <img
+//           src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
+//           alt="Jylian Summers"
+//           className="w-32 md:w-40 h-auto rounded shadow-md"
+//         />
+
+//         {/* Text on the right */}
+//         <div className="text-left max-w-3xl">
+//           <h1 className="text-4xl font-bold mb-4">I'm Jylian!</h1>
+//           <p className="text-gray-600 mb-4">
+//             I’m a Senior Front-End Developer with 8+ years of experience building fast, scalable, and accessible web applications. My core strengths lie in React and TypeScript, supported by back-end experience in Java and Spring Boot, and deployment in AWS cloud environments.
+//           </p>
+//           <p className="text-gray-600 mb-4">
+//             I specialize in crafting responsive, user-centered interfaces that bring design systems to life and drive real business impact.
+//           </p>
+//           <p className="text-gray-600">
+//             Whether leading projects or collaborating cross-functionally, I bring a detail-oriented, problem-solving mindset to every build.
+//           </p>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// }
+//       {/* Skills Section */}
+//       <section className="mt-16">
+//         <h2 className="text-2xl font-semibold mb-4 text-center">Skills</h2>
+//         <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-800">
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">React</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">JavaScript</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">HTML</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">CSS</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">TailwindCSS</span>
+//           <span className="px-3 py-1 bg-white rounded border shadow-sm">GitHub</span>
+//             <span className="px-3 py-1 bg-white rounded border shadow-sm">UI/UX</span>
+//           </div>
+//         </section>
+//       {/* Experience Section */}
+//       <section className="mt-16">
+//         <h2 className="text-2xl font-semibold mb-4 text-center">Experience</h2>
+//         <div className="space-y-6 max-w-3xl mx-auto">
+//           <div>
+//             <h3 className="text-lg font-semibold">Front-End & Fullstack Web Developer (Consultant)</h3>
+//             <p className="text-sm text-gray-600">Jan 2019 – Present, San Diego, CA</p>
+//             <ul className="list-disc ml-5 mt-2 text-sm text-gray-700">
+//               <li>Implemented and maintained front-end web applications using React.js.</li>
+//               <li>Reduced page load speeds by 20% and improved conversion rates.</li>
+//               <li>Collaborated on a user-friendly sign-up form, increasing engagement by 25%.</li>
+//             </ul>
+//           </div>
+
+//           <div>
+//             <h3 className="text-lg font-semibold">Digital Marketing Manager (Contract)</h3>
+//             <p className="text-sm text-gray-600">Mar 2022 – Mar 2023, Aquent</p>
+//             <ul className="list-disc ml-5 mt-2 text-sm text-gray-700">
+//               <li>Developed and executed digital marketing strategies for various clients.</li>
+//               <li>Increased organic traffic by 30% through SEO and content marketing.</li>
+//               <li>Managed social media campaigns, boosting engagement by 40%.</li>
+//             </ul>
+//           </div>
+
+//           <div>
+//               <div>
+//                 <h3 className="text-lg font-semibold">Global Digital Activation Manager (Contract)</h3>
+//                 <p className="text-sm text-gray-600">Mar 2022 – Mar 2023, Aquent</p>
+//                 <ul className="list-disc ml-5 mt-2 text-sm text-gray-700">
+//                   <li>Curated, developed, and managed content to enhance the brand’s online presence and engagement.</li>
+//                   <li>Expanded content volume and diversity aligned with global brand strategy and consumer insights to deliver real-time brand storytelling.</li>
+//                   <li>Managed social media campaigns, boosting engagement by 40%.</li>
+//                 </ul>
+//               </div>
+//             </div>
+//         </div>
+//         </section>
+//             </div>
+//           );
+
+// export default App;
