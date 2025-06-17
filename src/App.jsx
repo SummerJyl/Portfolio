@@ -84,37 +84,34 @@ export default function App() {
   <h1 className="text-2xl font-bold text-emerald-600 font-lato text-center md:text-left">
     Jylian Summers
   </h1>
-  <div className="flex gap-4 mt-2 md:mt-0">
+
+  <div className="flex items-center space-x-4 text-emerald-700 mt-2 md:mt-0">
+    <button
+      onClick={() => setContactOpen(true)}
+      className="hover:text-emerald-900 transition"
+      aria-label="Contact"
+    >
+      <FaEnvelope size={20} />
+    </button>
+    <a
+      href="https://github.com/SummerJyl"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-emerald-900 transition"
+      aria-label="GitHub"
+    >
+      <FaGithub size={20} />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/jyliansummers/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-emerald-900 transition"
+      aria-label="LinkedIn"
+    >
+      <FaLinkedin size={20} />
+    </a>
   </div>
-
-  <div className="flex items-center space-x-4 text-emerald-700">
-  <button
-    onClick={() => setContactOpen(true)}
-    className="hover:text-emerald-900 transition"
-    aria-label="Contact"
-  >
-    <FaEnvelope size={20} />
-  </button>
-  <a
-    href="https://github.com/SummerJyl"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-emerald-900 transition"
-    aria-label="GitHub"
-  >
-    <FaGithub size={20} />
-  </a>
-  <a
-    href="https://www.linkedin.com/in/jyliansummers/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-emerald-900 transition"
-    aria-label="LinkedIn"
-  >
-    <FaLinkedin size={20} />
-  </a>
-</div>
-
 </nav>
 
 {/* Hero */}
@@ -130,19 +127,45 @@ export default function App() {
   </p>
 </section>
 
-{/* With this: */}
-<AccordionCard title="Projects">
-  <ScreenshotGallery projects={projects} />
-</AccordionCard>
-<AccordionCard title="Experience">
-  {/* Replace with your actual experience content */}
-  <ul className="list-disc pl-6 text-left">
-    <li>Senior Full-Stack Developer – React & Spring Boot</li>
-    <li>Digital Marketing Manager – HubSpot & SEO Strategy</li>
-    <li>Global Digital Activation Manager – 45+ React/Node Sites</li>
-    <li>UX / WebShop Manager – SQL & Front-End Leadership</li>
-  </ul>
-</AccordionCard>
+<div className="flex flex-col md:flex-row md:justify-between md:gap-6 mb-10">
+  <div className="md:w-1/3">
+    <AccordionCard title="Projects">
+      <ScreenshotGallery projects={projects} />
+    </AccordionCard>
+  </div>
+
+  <div className="md:w-1/3">
+    <AccordionCard title="Experience">
+      <div className="space-y-6 text-left">
+        {experience.map((job, index) => (
+          <div key={index}>
+            <h3 className="font-semibold text-lg text-emerald-800">{job.title}</h3>
+            {job.company && <p className="text-sm italic">{job.company}</p>}
+            <p className="text-sm text-gray-600">{job.date}</p>
+            <ul className="list-disc list-inside mt-2 text-sm space-y-1">
+              {job.bullets.map((bullet, i) => (
+                <li key={i}>{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </AccordionCard>
+  </div>
+
+  <div className="md:w-1/3">
+    <AccordionCard title="Tech Stack">
+      <div className="flex flex-wrap gap-2 justify-center">
+        {skills.map(skill => (
+          <span key={skill} className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
+            {skill}
+          </span>
+        ))}
+      </div>
+    </AccordionCard>
+  </div>
+</div>
+
 
 <AccordionCard title="Tech Stack">
   <div className="flex flex-wrap gap-2 justify-center">
@@ -163,142 +186,3 @@ export default function App() {
   );
 }
 
-// Import other components like Skills, ContactModal as needed
-
-// function App() {
-//   return (
-//     <div className="max-w-5xl mx-auto p-6 bg-gray-50 min-h-screen">
-//       <Hero />
-//       <Projects />
-//       <Experience />
-//       {/* Skills Section */}
-//       <section className="mt-16">
-//         <h2 className="text-2xl font-semibold mb-4 text-center">Skills</h2>
-//         <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-800">
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">React</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">JavaScript</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">HTML</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">CSS</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">TailwindCSS</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">GitHub</span>
-//             <span className="px-3 py-1 bg-white rounded border shadow-sm">UI/UX</span>
-//           </div>
-//         </section>
-//       {/* Add Skills and ContactModal here when ready */}
-//     </div>
-//   );
-// }
-
-// export default App;
-
-// function App() {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   return (
-//     <div className="min-h-screen bg-gray-50 text-gray-900 max-w-7xl mx-auto px-6">
-//       {/* Navigation */}
-//       <nav className="sticky top-0 z-50 bg-white flex justify-end items-center gap-6 py-4 shadow-sm border-b text-sm font-medium text-gray-700">
-//         <button
-//           onClick={() => setIsOpen(true)}
-//           className="hover:text-emerald-600 transition duration-200"
-//         >
-//           Contact Me
-//         </button>
-//         <a
-//           href="https://github.com/SummerJyl"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//           className="hover:text-emerald-600 transition duration-200"
-//         >
-//           GitHub
-//         </a>
-//         <a
-//           href="https://www.linkedin.com/in/jyliansummers/"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//           className="hover:text-emerald-600 transition duration-200"
-//         >
-//           LinkedIn
-//         </a>
-//       </nav>
-
-//       {/* Hero Section */}
-//       <section className="mt-12 flex flex-col md:flex-row items-start gap-8">
-//         {/* Image on the left */}
-//         <img
-//           src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
-//           alt="Jylian Summers"
-//           className="w-32 md:w-40 h-auto rounded shadow-md"
-//         />
-
-//         {/* Text on the right */}
-//         <div className="text-left max-w-3xl">
-//           <h1 className="text-4xl font-bold mb-4">I'm Jylian!</h1>
-//           <p className="text-gray-600 mb-4">
-//             I’m a Senior Front-End Developer with 8+ years of experience building fast, scalable, and accessible web applications. My core strengths lie in React and TypeScript, supported by back-end experience in Java and Spring Boot, and deployment in AWS cloud environments.
-//           </p>
-//           <p className="text-gray-600 mb-4">
-//             I specialize in crafting responsive, user-centered interfaces that bring design systems to life and drive real business impact.
-//           </p>
-//           <p className="text-gray-600">
-//             Whether leading projects or collaborating cross-functionally, I bring a detail-oriented, problem-solving mindset to every build.
-//           </p>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
-//       {/* Skills Section */}
-//       <section className="mt-16">
-//         <h2 className="text-2xl font-semibold mb-4 text-center">Skills</h2>
-//         <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-800">
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">React</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">JavaScript</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">HTML</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">CSS</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">TailwindCSS</span>
-//           <span className="px-3 py-1 bg-white rounded border shadow-sm">GitHub</span>
-//             <span className="px-3 py-1 bg-white rounded border shadow-sm">UI/UX</span>
-//           </div>
-//         </section>
-//       {/* Experience Section */}
-//       <section className="mt-16">
-//         <h2 className="text-2xl font-semibold mb-4 text-center">Experience</h2>
-//         <div className="space-y-6 max-w-3xl mx-auto">
-//           <div>
-//             <h3 className="text-lg font-semibold">Front-End & Fullstack Web Developer (Consultant)</h3>
-//             <p className="text-sm text-gray-600">Jan 2019 – Present, San Diego, CA</p>
-//             <ul className="list-disc ml-5 mt-2 text-sm text-gray-700">
-//               <li>Implemented and maintained front-end web applications using React.js.</li>
-//               <li>Reduced page load speeds by 20% and improved conversion rates.</li>
-//               <li>Collaborated on a user-friendly sign-up form, increasing engagement by 25%.</li>
-//             </ul>
-//           </div>
-
-//           <div>
-//             <h3 className="text-lg font-semibold">Digital Marketing Manager (Contract)</h3>
-//             <p className="text-sm text-gray-600">Mar 2022 – Mar 2023, Aquent</p>
-//             <ul className="list-disc ml-5 mt-2 text-sm text-gray-700">
-//               <li>Developed and executed digital marketing strategies for various clients.</li>
-//               <li>Increased organic traffic by 30% through SEO and content marketing.</li>
-//               <li>Managed social media campaigns, boosting engagement by 40%.</li>
-//             </ul>
-//           </div>
-
-//           <div>
-//               <div>
-//                 <h3 className="text-lg font-semibold">Global Digital Activation Manager (Contract)</h3>
-//                 <p className="text-sm text-gray-600">Mar 2022 – Mar 2023, Aquent</p>
-//                 <ul className="list-disc ml-5 mt-2 text-sm text-gray-700">
-//                   <li>Curated, developed, and managed content to enhance the brand’s online presence and engagement.</li>
-//                   <li>Expanded content volume and diversity aligned with global brand strategy and consumer insights to deliver real-time brand storytelling.</li>
-//                   <li>Managed social media campaigns, boosting engagement by 40%.</li>
-//                 </ul>
-//               </div>
-//             </div>
-//         </div>
-//         </section>
-//             </div>
-//           );
-
-// export default App;
