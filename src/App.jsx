@@ -75,7 +75,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 max-w-5xl mx-auto px-6 py-10 font-sans">
+    <div className="min-h-screen text-gray-900 max-w-5xl mx-auto px-6 py-10 font-lato bg-sage">
       {/* Navbar */}
 <nav className="flex flex-col items-center justify-center mb-10 md:flex-row md:justify-between md:items-center px-6 py-4 border-b border-gray-300">
   <h1 className="text-2xl font-bold text-center mb-2 md:mb-0">
@@ -83,27 +83,27 @@ export default function App() {
   </h1>
   <div className="flex items-center space-x-4">
     <button
-      onClick={() => setContactOpen(true)}
-      className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition"
-    >
+  onClick={() => setContactOpen(true)}
+  className="bg-emerald-700 text-white px-3 py-1 rounded hover:bg-emerald-800 transition"
+  >
       Contact
-    </button>
-    <a
-      href="https://github.com/SummerJyl"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-600 hover:underline"
-    >
+</button>
+<a
+  href="https://github.com/SummerJyl"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-emerald-700 hover:underline"
+>
       GitHub
-    </a>
-    <a
-      href="https://www.linkedin.com/in/jyliansummers/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-600 hover:underline"
-    >
+</a>
+<a
+  href="https://www.linkedin.com/in/jyliansummers/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-emerald-700 hover:underline"
+>
       LinkedIn
-    </a>
+      </a>
   </div>
 </nav>
 
@@ -142,16 +142,16 @@ export default function App() {
       </section>
 
       {/* Projects */}
-      <section className="mb-16">
-        <h3 className="text-xl font-semibold mb-6 border-b-2 border-blue-600 inline-block">
-          Projects
-        </h3>
-        <ScreenshotGallery projects={projects} />
-      </section>
+<section className="mb-16">
+  <h3 className="text-xl font-semibold mb-6 border-b-2 border-emerald-700 inline-block text-emerald-700">
+    Projects
+  </h3>
+  <ScreenshotGallery projects={projects} />
+</section>
 
       {/* Experience */}
       <section className="mb-16">
-        <h3 className="text-xl font-semibold mb-6 border-b-2 border-blue-600 inline-block">
+  <h3 className="text-xl font-semibold mb-6 border-b-2 border-emerald-700 inline-block text-emerald-700">
           Experience
         </h3>
         {experience.map((job, idx) => (
@@ -168,21 +168,22 @@ export default function App() {
       </section>
 
       {/* Skills */}
-      <section className="mb-16">
-        <h3 className="text-xl font-semibold mb-6 border-b-2 border-blue-600 inline-block">
-          Skills
-        </h3>
-        <div className="flex flex-wrap gap-3">
-          {skills.map((skill, idx) => (
-            <span
-              key={idx}
-              className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </section>
+<section className="mb-16">
+  <h3 className="text-xl font-semibold mb-6 border-b-2 border-emerald-700 inline-block text-emerald-700">
+    Skills
+  </h3>
+  <div className="flex flex-wrap gap-3">
+    {skills.map((skill, idx) => (
+      <span
+        key={idx}
+        className="bg-green-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+</section>
+
 
       {/* Contact Modal */}
       {contactOpen && <ContactModal onClose={() => setContactOpen(false)} />}
