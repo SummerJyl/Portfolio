@@ -8,19 +8,19 @@ export default function App() {
   const projects = [
     {
       title: "Personal Finance Dashboard",
-      imgSrc: "/screenshots/responsive-pfd.jpeg",
+      imgSrc: "/screenshots/responsive-pfd.png",
       description: "A React-based dashboard for managing personal finances.",
       url: "https://yourlivepfdlink.com",
     },
     {
       title: "Bio Health Data Explorer",
-      imgSrc: "/screenshots/responsive-bhde.png",
+      imgSrc: "/screenshots/responsive-biohealth.png",
       description: "Interactive data explorer for Bio Health projects.",
       url: "https://yourlivebiohealthlink.com",
     },
     {
       title: "Login Page",
-      imgSrc: "/screenshots/responsive-login.jpeg",
+      imgSrc: "/screenshots/responsive",
       description: "Clean, modern login page built with React.",
       url: "https://yourliveloginpage.com",
     },
@@ -28,47 +28,50 @@ export default function App() {
 
   const experience = [
     {
-      title: "Senior Full-Stack Developer | ReactJS + Spring Boot",
+      title: "Front End & Full Stack Web Developer",
       company: "Self-Employed",
       date: "2019 - Present",
       bullets: [
-        "Designed and developed scalable React applications with Spring Boot backends.",
-        "Improved app performance by 20% through optimized code and caching.",
-        "Led client projects with agile methodologies and daily standups.",
+        "Developed React and Next.js-based web features, growth experiments in collaboration with marketing, product, and design teams",
+        "Integrated Contentful CMS to enable scalable and editable content across marketing campaigns",
+        "Implemented unit testing via Jest to maintain code stability and minimize regressions in production",
+        "Maintained Git versioning and participated in code reviews within agile sprint cycles"
       ],
     },
     {
       title: "Digital Marketing Manager (Contract) | Aquent",
       date: "Mar 2022 - Mar 2023",
       bullets: [
-        "Managed inbound marketing campaigns using HubSpot.",
-        "Tracked and improved campaign KPIs with Google Analytics.",
-        "Built segmented lists and workflows to nurture leads.",
+        "Led website content strategy and inbound lead generation for B2B SaaS clients using HubSpot CMS and marketing automationn",
+        "Collaborated with engineering to refine API-driven content delivery and ensure performance across web properties",
+        "Designed and deployed SEO-optimized landing pages and content modules, resulting in a 25% increase in organic traffic",
+        "Worked cross-functionally to launch nurture campaigns using web behavior and CRM data for dynamic personalization"
       ],
     },
     {
       title: "Global Digital Activation Manager | Aquent",
       date: "Oct 2020 - Jun 2021",
       bullets: [
-        "Managed 45+ React/Node.js eCommerce sites.",
-        "Implemented RESTful APIs and test-driven development.",
-        "Collaborated with designers to improve UX/UI.",
+        "Coordinated full-stack activation for 45+ React/Node.js eCommerce sites across global markets",
+        "Partnered with engineering to deploy secure, modular web apps integrated with PostgreSQL and MongoDB backends",
+        "Supported analytics reporting and visualization for KPIs related to customer retention and revenue growth",
       ],
     },
     {
       title: "UX Manager / WebShop Manager",
       date: "Jun 2017 - Dec 2018",
       bullets: [
-        "Oversaw design and development of modular UI components.",
-        "Supported SQL backend reporting and analytics.",
-        "Improved user engagement by 25% through form redesign.",
+        "Led front-end redevelopment efforts for a multi-brand eCommerce platform using a modular React architecture",
+        "Conducted UX research and implemented component-based design systems to improve user flow and checkout experience",
+        "Integrated Shopify and custom APIs for seamless order fulfillment and customer data sync",
       ],
     },
   ];
 
   const skills = [
-    "ReactJS", "JavaScript", "Tailwind CSS", "Node.js",
-    "Spring Boot", "MongoDB", "REST APIs", "Agile",
+    "ReactJS", "JavaScript", "Tailwind CSS", "Node.js", "HTML5", "CSS3",
+  "TypeScript", "Next.js", "Git", "Jest", "Contentful CMS",
+    "Bootstrap", "MongoDB", "REST APIs", "Agile",
   ];
 
   return (
