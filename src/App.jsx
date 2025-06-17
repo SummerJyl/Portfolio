@@ -78,15 +78,16 @@ export default function App() {
   ];
 
   return (
-    <div
-  className="min-h-screen flex flex-col text-gray-900 px-4 py-6 font-lato"
-  style={{
-    backgroundImage: `url('${import.meta.env.BASE_URL}images/bg-hero.png')`,
-    backgroundSize: 'contain',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center top',
-  }}
->
+  <div
+    className="min-h-screen flex flex-col text-gray-900 px-4 py-6 font-lato"
+    style={{
+      backgroundImage: `url('${import.meta.env.BASE_URL}images/bg-hero.png')`,
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center top',
+    }}
+  >
+
         {/* Navbar */}
         <nav className="flex flex-col md:flex-row md:justify-between items-center px-6 py-4 border-b border-gray-300">
           <h1 className="text-2xl font-bold text-emerald-700 font-lato text-center md:text-left">
