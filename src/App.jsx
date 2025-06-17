@@ -8,19 +8,19 @@ export default function App() {
   const projects = [
     {
       title: "Personal Finance Dashboard",
-      imgSrc: "/screenshots/responsive-pfd.jpeg",
+      imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-pfd.jpeg`,
       description: "A React-based dashboard for managing personal finances.",
       url: "https://yourlivepfdlink.com",
     },
     {
       title: "Bio Health Data Explorer",
-      imgSrc: "/screenshots/responsive-bhde.png",
+      imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-bhde.png`,
       description: "Interactive data explorer for Bio Health projects.",
       url: "https://yourlivebiohealthlink.com",
     },
     {
       title: "Login Page",
-      imgSrc: "/screenshots/responsive-login.jpeg",
+      imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-login.jpeg`,
       description: "Clean, modern login page built with React.",
       url: "https://yourliveloginpage.com",
     },
