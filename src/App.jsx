@@ -131,10 +131,10 @@ export default function App() {
       {/* Hero */}
       <section className="text-center mb-16">
         <img
-          src="/images/li-pix.jpg"
+          src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
           alt="Jylian Summers"
           className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-        />
+      />
         <h2 className="text-3xl font-semibold">Web Developer & Bio Health Enthusiast</h2>
         <p className="mt-2 text-gray-600 max-w-xl mx-auto">
           Purpose-driven technologist passionate about building engaging web experiences.
