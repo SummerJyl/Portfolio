@@ -3,6 +3,7 @@ import ContactModal from './components/ContactModal';
 import ScreenshotGallery from './components/ScreenshotGallery';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import AccordionCard from './components/AccordionCard';
+import ProjectsDropdown from './components/ProjectsDropdown';
 
 export default function App() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function App() {
     {
       title: "Login Page",
       imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-login.jpeg`,
-      description: "Clean, modern login page built with React.",
+      description: "Secure and user-friendly login page designed for Bio Health applications, ensuring seamless access to patient portals and health data management systems.",
       url: "https://yourliveloginpage.com",
     },
   ];
@@ -72,117 +73,102 @@ export default function App() {
 
   const skills = [
     "ReactJS", "JavaScript", "Tailwind CSS", "Node.js", "HTML5", "CSS3",
-  "TypeScript", "Next.js", "Git", "Jest", "Contentful CMS",
+    "TypeScript", "Next.js", "Git", "Jest", "Contentful CMS",
     "Bootstrap", "MongoDB", "REST APIs", "Agile",
   ];
 
   return (
-    <div className="min-h-screen text-gray-900 max-w-5xl mx-auto px-6 py-10 font-lato bg-sage">
-
-{/* Navbar */}
-<nav className="flex flex-col md:flex-row md:justify-between items-center px-6 py-4 border-b border-gray-300">
-  <h1 className="text-2xl font-bold text-emerald-600 font-lato text-center md:text-left">
-    Jylian Summers
-  </h1>
-
-  <div className="flex items-center space-x-4 text-emerald-700 mt-2 md:mt-0">
-    <button
-      onClick={() => setContactOpen(true)}
-      className="hover:text-emerald-900 transition"
-      aria-label="Contact"
-    >
-      <FaEnvelope size={20} />
-    </button>
-    <a
-      href="https://github.com/SummerJyl"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-emerald-900 transition"
-      aria-label="GitHub"
-    >
-      <FaGithub size={20} />
-    </a>
-    <a
-      href="https://www.linkedin.com/in/jyliansummers/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-emerald-900 transition"
-      aria-label="LinkedIn"
-    >
-      <FaLinkedin size={20} />
-    </a>
-  </div>
-</nav>
-
-{/* Hero */}
-<section className="text-center mb-16">
-  <img
-    src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
-    alt="Jylian Summers"
-    className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-  />
-  <h2 className="text-3xl font-semibold">Bio Health Enthusiast</h2>
-  <p className="mt-2 text-gray-600 max-w-xl mx-auto">
-    Purpose-driven technologist passionate about building engaging web experiences.
-  </p>
-</section>
-
-<div className="flex flex-col md:flex-row md:justify-between md:gap-6 mb-10">
-  <div className="md:w-1/3">
-    <AccordionCard title="Projects">
-      <ScreenshotGallery projects={projects} />
-    </AccordionCard>
-  </div>
-
-  <div className="md:w-1/3">
-    <AccordionCard title="Experience">
-      <div className="space-y-6 text-left">
-        {experience.map((job, index) => (
-          <div key={index}>
-            <h3 className="font-semibold text-lg text-emerald-800">{job.title}</h3>
-            {job.company && <p className="text-sm italic">{job.company}</p>}
-            <p className="text-sm text-gray-600">{job.date}</p>
-            <ul className="list-disc list-inside mt-2 text-sm space-y-1">
-              {job.bullets.map((bullet, i) => (
-                <li key={i}>{bullet}</li>
-              ))}
-            </ul>
+    <div
+  className="min-h-screen flex flex-col text-gray-900 px-4 py-6 font-lato"
+  style={{
+    backgroundImage: `url('/images/bg-hero.png')`,
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center top',
+  }}
+>
+        {/* Navbar */}
+        <nav className="flex flex-col md:flex-row md:justify-between items-center px-6 py-4 border-b border-gray-300">
+          <h1 className="text-2xl font-bold text-emerald-700 font-lato text-center md:text-left">
+            Jylian Summers
+          </h1>
+          <div className="flex items-center space-x-4 text-emerald-700 mt-2 md:mt-0">
+            <button
+              onClick={() => setContactOpen(true)}
+              className="hover:text-emerald-900 transition"
+              aria-label="Contact"
+            >
+              <FaEnvelope size={20} />
+            </button>
+            <a href="https://github.com/SummerJyl" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <FaGithub size={20} className="hover:text-emerald-900 transition" />
+            </a>
+            <a href="https://www.linkedin.com/in/jyliansummers/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedin size={20} className="hover:text-emerald-900 transition" />
+            </a>
           </div>
-        ))}
-      </div>
-    </AccordionCard>
-  </div>
+        </nav>
 
-  <div className="md:w-1/3">
-    <AccordionCard title="Tech Stack">
-      <div className="flex flex-wrap gap-2 justify-center">
-        {skills.map(skill => (
-          <span key={skill} className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </AccordionCard>
-  </div>
-</div>
+        {/* Main content flex-grow to fill space */}
+        <main className="flex-grow max-w-5xl mx-auto px-4 py-6 flex flex-col">
 
+        {/* Hero Section */}
+        <section className="text-center mb-8">
+          <img
+            src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
+            alt="Jylian Summers"
+            className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h2 className="text-3xl font-semibold">Web Developer | Bio Health Enthusiast</h2>
+          <p className="mt-2 text-gray-600 max-w-xl mx-auto">
+            Purpose-driven technologist passionate about building engaging web experiences.
+          </p>
+        </section>
 
-<AccordionCard title="Tech Stack">
-  <div className="flex flex-wrap gap-2 justify-center">
-    {[
-      'React', 'JavaScript', 'Tailwind CSS', 'Node.js', 'MongoDB', 'HubSpot',
-      'WordPress', 'Figma', 'Git', 'SEO', 'Google Analytics'
-    ].map(skill => (
-      <span key={skill} className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
-        {skill}
-      </span>
-    ))}
-  </div>
-</AccordionCard>
-
-      {/* Contact Modal */}
-      {contactOpen && <ContactModal onClose={() => setContactOpen(false)} />}
-    </div>
-  );
-}
-
+        {/* Content Sections */}
+        <div className="flex flex-col md:flex-row md:justify-between gap-6 mb-6 w-full">
+          <div className="w-full md:flex-1">
+            <AccordionCard title="Projects">
+              <ProjectsDropdown projects={projects} />
+            </AccordionCard>
+          </div>
+          <div className="w-full md:flex-1">
+            <AccordionCard title="Experience">
+              <div className="space-y-6 text-left">
+                {experience.map((job, index) => (
+                  <div key={index}>
+                    <h3 className="font-semibold text-lg text-emerald-800">{job.title}</h3>
+                    {job.company && <p className="text-sm italic">{job.company}</p>}
+                    <p className="text-sm text-gray-600">{job.date}</p>
+                    <ul className="list-disc list-inside mt-2 text-sm space-y-1">
+                      {job.bullets.map((bullet, i) => (
+                        <li key={i}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </AccordionCard>
+          </div>
+          <div className="w-full md:flex-1">
+            <AccordionCard title="Tech Stack">
+              <div className="flex flex-wrap gap-2 justify-center">
+                {skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </AccordionCard>
+          </div>
+        </div>
+      
+        {/* Contact Modal */}
+        {contactOpen && <ContactModal onClose={() => setContactOpen(false)} />}
+        </main>
+        </div>
+    );
+  }
