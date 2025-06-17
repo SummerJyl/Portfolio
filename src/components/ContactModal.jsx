@@ -3,52 +3,61 @@ import React from 'react';
 export default function ContactModal({ onClose }) {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white p-6 rounded shadow-lg max-w-md w-full relative">
+      <div className="bg-[#f4f7f4] p-6 rounded-2xl shadow-lg max-w-md w-full relative">
         <button
-          className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+          className="absolute top-3 right-4 text-gray-600 hover:text-gray-900 text-xl"
           onClick={onClose}
           aria-label="Close contact form"
         >
           &times;
         </button>
-        <h3 className="text-xl font-semibold mb-4">Contact Me</h3>
+        <h3 className="text-2xl text-emerald-700 font-semibold mb-6 text-center">
+          Contact Me
+        </h3>
         <form
           onSubmit={(e) => {
             e.preventDefault();
             alert('Thank you! Your message has been sent.');
             onClose();
           }}
+          className="space-y-4"
         >
-          <label className="block mb-2">
-            Name
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Name
+            </label>
             <input
               type="text"
               name="name"
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
+              className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-600"
             />
-          </label>
-          <label className="block mb-2">
-            Email
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Email
+            </label>
             <input
               type="email"
               name="email"
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
+              className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-600"
             />
-          </label>
-          <label className="block mb-4">
-            Message
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Message
+            </label>
             <textarea
               name="message"
               rows="4"
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 mt-1"
+              className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-600"
             ></textarea>
-          </label>
+          </div>
           <button
             type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+            className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-2 px-4 rounded transition"
           >
             Send
           </button>
@@ -57,49 +66,3 @@ export default function ContactModal({ onClose }) {
     </div>
   );
 }
-
-
-// import React from 'react';
-
-// export default function ContactModal({ onClose }) {
-//   return (
-//     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-//       <div className="bg-white rounded-lg p-6 max-w-md w-full relative">
-//         <button
-//           onClick={onClose}
-//           className="absolute top-4 right-4 text-gray-600 hover:text-black text-2xl font-bold"
-//           aria-label="Close modal"
-//         >
-//           &times;
-//         </button>
-//         <h3 className="text-xl font-semibold mb-4">Contact Me</h3>
-//         <form className="space-y-4">
-//           <input
-//             type="text"
-//             name="name"
-//             placeholder="Your Name"
-//             className="w-full border px-4 py-2 rounded"
-//           />
-//           <input
-//             type="email"
-//             name="email"
-//             placeholder="Your Email"
-//             className="w-full border px-4 py-2 rounded"
-//           />
-//           <textarea
-//             name="message"
-//             placeholder="Your Message"
-//             rows="4"
-//             className="w-full border px-4 py-2 rounded"
-//           />
-//           <button
-//             type="submit"
-//             className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded w-full"
-//           >
-//             Send
-//           </button>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// }
