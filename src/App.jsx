@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ContactModal from './components/ContactModal';
 import ScreenshotGallery from './components/ScreenshotGallery';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function App() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -78,33 +79,37 @@ export default function App() {
     <div className="min-h-screen text-gray-900 max-w-5xl mx-auto px-6 py-10 font-lato bg-sage">
       {/* Navbar */}
 <nav className="flex flex-col items-center justify-center mb-10 md:flex-row md:justify-between md:items-center px-6 py-4 border-b border-gray-300">
-  <h1 className="text-2xl font-bold text-center mb-2 md:mb-0">
-    Jylian Summers | Web Developer
-  </h1>
-  <div className="flex items-center space-x-4">
-    <button
-  onClick={() => setContactOpen(true)}
-  className="bg-emerald-700 text-white px-3 py-1 rounded hover:bg-emerald-800 transition"
+  <h1 className="text-2xl font-bold text-center mb-2 md:mb-0 text-emerald-600 font-lato">
+  Jylian Summers | Web Developer
+</h1>
+  <div className="flex items-center space-x-4 text-emerald-700">
+  <button
+    onClick={() => setContactOpen(true)}
+    className="hover:text-emerald-900 transition"
+    aria-label="Contact"
   >
-      Contact
-</button>
-<a
-  href="https://github.com/SummerJyl"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-emerald-700 hover:underline"
->
-      GitHub
-</a>
-<a
-  href="https://www.linkedin.com/in/jyliansummers/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-emerald-700 hover:underline"
->
-      LinkedIn
-      </a>
-  </div>
+    <FaEnvelope size={20} />
+  </button>
+  <a
+    href="https://github.com/SummerJyl"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-emerald-900 transition"
+    aria-label="GitHub"
+  >
+    <FaGithub size={20} />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/jyliansummers/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-emerald-900 transition"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedin size={20} />
+  </a>
+</div>
+
 </nav>
 
       {/* Navbar
@@ -128,18 +133,22 @@ export default function App() {
         </div>
       </nav> */}
 
-      {/* Hero */}
-      <section className="text-center mb-16">
-        <img
-          src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
-          alt="Jylian Summers"
-          className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-      />
-        <h2 className="text-3xl font-semibold">Web Developer & Bio Health Enthusiast</h2>
-        <p className="mt-2 text-gray-600 max-w-xl mx-auto">
-          Purpose-driven technologist passionate about building engaging web experiences.
-        </p>
-      </section>
+     {/* Hero */}
+<section
+  className="text-center mb-16 bg-cover bg-center bg-no-repeat py-16 px-4 rounded-lg"
+  style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg-hero.png)` }}
+>
+  <img
+    src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
+    alt="Jylian Summers"
+    className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+  />
+  <h2 className="text-3xl font-semibold text-emerald-800">Web Developer & Bio Health Enthusiast</h2>
+  <p className="mt-2 text-gray-800 max-w-xl mx-auto bg-white/70 p-2 rounded">
+    Purpose-driven technologist passionate about building engaging web experiences.
+  </p>
+</section>
+
 
       {/* Projects */}
 <section className="mb-16">
