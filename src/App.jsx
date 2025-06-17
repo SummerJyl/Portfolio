@@ -24,7 +24,10 @@ export default function App() {
     {
       title: "Login Page",
       imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-login.jpeg`,
-      description: "Secure and user-friendly login page designed for Bio Health applications, ensuring seamless access to patient portals and health data management systems.",
+      description: `I built a modern, responsive Login page using HTML5, CSS3, and JavaScript, featuring animated transitions between "Login" and "Create Account" states. 
+      The design leverages CSS Flexbox for layout, CSS keyframes for smooth UI animation, and modular architecture for scalability. 
+      Technologies like Webpack, TypeScript, and Redux enhance maintainability and performance.
+      Skills: HTML5 · CSS3 · JavaScript · CSS Flexbox · CSS Keyframes · TypeScript · Redux · Webpack · UI/UX Design.`,
       url: "https://yourliveloginpage.com",
     },
   ];
