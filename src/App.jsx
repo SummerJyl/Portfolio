@@ -81,7 +81,7 @@ export default function App() {
     <div
   className="min-h-screen flex flex-col text-gray-900 px-4 py-6 font-lato"
   style={{
-    backgroundImage: `url('/images/bg-hero.png')`,
+    backgroundImage: `url('${import.meta.env.BASE_URL}images/bg-hero.png')`,
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center top',
@@ -113,7 +113,7 @@ export default function App() {
         <main className="flex-grow max-w-5xl mx-auto px-4 py-6 flex flex-col">
 
         {/* Hero Section */}
-        <section className="text-center mb-8">
+        <section className="text-center mb-16">
           <img
             src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
             alt="Jylian Summers"
