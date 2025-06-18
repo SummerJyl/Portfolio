@@ -4,11 +4,9 @@ A responsive personal portfolio site built with **React**, **Vite**, and **Tailw
 
 ## 🔧 Tech Stack
 
-- React 18
-- Vite
-- Tailwind CSS
-- gh-pages for GitHub deployment
-- React Icons
+**Frontend:** React, Vite, Tailwind CSS  
+**Deployment:** GitHub Pages  
+**Tools:** ESLint, Prettier, GitHub Actions (CI/CD) 
 
 ---
 
@@ -29,3 +27,20 @@ export default defineConfig({
   base: '/Portfolio/', // ← required for GitHub Pages
   plugins: [react()],
 });
+```
+---
+## 🚀 Explore My Work
+
+Feel free to explore the projects and case studies to see how I build scalable, maintainable, and user-friendly web applications.
+
+---
+
+### 📫 Contact
+
+- [LinkedIn](https://linkedin.com/in/your-linkedin-profile)  
+- [Email](mailto:your.jylian_summers@yahoo.com)  
+- [Portfolio Website](https://summerjyl.github.io/Portfolio/))  
+
+---
+
+Thank you for visiting!
