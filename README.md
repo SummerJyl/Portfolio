@@ -39,7 +39,7 @@ Feel free to explore the projects and case studies to see how I build scalable, 
 
 - [LinkedIn](https://linkedin.com/in/your-linkedin-profile)  
 - [Email](mailto:your.jylian_summers@yahoo.com)  
-- [Portfolio Website](https://summerjyl.github.io/Portfolio/))  
+- [Portfolio Website](https://summerjyl.github.io/Portfolio/)  
 
 ---
 
