@@ -29,7 +29,7 @@ export default defineConfig({
 });
 ```
 ---
-## 🚀 Explore My Work
+### 🚀 Explore My Work
 
 Feel free to explore the projects and case studies to see how I build scalable, maintainable, and user-friendly web applications.
 
