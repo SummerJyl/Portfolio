@@ -75,9 +75,19 @@ export default function App() {
   ];
 
   const skills = [
-    "ReactJS", "JavaScript", "Tailwind CSS", "Node.js", "HTML5", "CSS3",
-    "TypeScript", "Next.js", "Git", "Jest", "Contentful CMS",
-    "Bootstrap", "MongoDB", "REST APIs", "Agile",
+  "Languages & Frameworks", "ReactJS • JavaScript • HTML • CSS • Node.js • Spring Boot • MongoDB • SQL • Express",
+
+  "CMS & SaaS Tools",
+  "WordPress • HubSpot • Umbraco • Shopify • Cascade CMS",
+
+  "Digital Marketing Tools",
+  "Google Analytics 4 • Google Tag Manager • SEMrush • BrightEdge • Optimizely • Tealium",
+
+  "Design & UI/UX",
+  "Figma • Adobe XD • Photoshop • Illustrator • After Effects",
+
+  "Dev Tools",
+  "Git • GitHub • VS Code • JIRA • Lighthouse • Postman",
   ];
 
   return (
