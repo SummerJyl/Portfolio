@@ -63,48 +63,61 @@ export default function App() {
 
   return (
   <div
-    className="min-h-screen flex flex-col text-gray-900 px-4 py-6 font-lato"
+    className="min-h-[100vh] flex flex-col text-gray-900 px-4 py-6 font-lato"
     style={{
       backgroundImage: `url('${import.meta.env.BASE_URL}images/bg-hero.png')`,
-      backgroundSize: 'contain',
+      backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center top',
     }}
   >
 
         {/* Navbar */}
-        <nav className="flex flex-col md:flex-row md:justify-between items-center px-6 py-4 border-b border-gray-300">
-          <h1 className="text-2xl font-bold text-emerald-700 font-lato text-center md:text-left">
-            Jylian Summers
+        <nav className="flex flex-col items-center px-6 py-4 border-b border-gray-300 space-y-2">
+          <h1 className="text-4xl font-bold text-emerald-700 font-playfair text-center md:text-left">
+          Jylian Summers
           </h1>
-          <div className="flex items-center space-x-4 text-emerald-700 mt-2 md:mt-0">
-            <button
-              onClick={() => setContactOpen(true)}
-              className="hover:text-emerald-900 transition"
-              aria-label="Contact"
-            >
-              <FaEnvelope size={20} />
-            </button>
-            <a href="https://github.com/SummerJyl" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <FaGithub size={20} className="hover:text-emerald-900 transition" />
-            </a>
-            <a href="https://www.linkedin.com/in/jyliansummers/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <FaLinkedin size={20} className="hover:text-emerald-900 transition" />
-            </a>
-          </div>
-        </nav>
+  <div className="flex items-center space-x-4 text-emerald-700">
+    <button
+      onClick={() => setContactOpen(true)}
+      className="hover:text-emerald-900 transition"
+      aria-label="Contact"
+    >
+      <FaEnvelope size={20} />
+    </button>
+    <a
+      href="https://github.com/SummerJyl"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+      className="hover:text-emerald-900 transition"
+    >
+      <FaGithub size={20} />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/jyliansummers/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      className="hover:text-emerald-900 transition"
+    >
+      <FaLinkedin size={20} />
+    </a>
+  </div>
+</nav>
+
 
         {/* Main content flex-grow to fill space */}
         <main className="flex-grow max-w-5xl mx-auto px-4 py-6 flex flex-col">
 
         {/* Hero Section */}
-        <section className="text-center mb-16">
+        <section className="text-center mb-8">
           <img
             src={`${import.meta.env.BASE_URL}images/li-pix.jpg`}
             alt="Jylian Summers"
             className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
           />
-          <h2 className="text-3xl font-semibold">Web Developer | Bio Health Enthusiast</h2>
+          <h2 className="text-3xl font-semibold text-emerald-700">Web Developer | Bio Health Enthusiast</h2>
           <p className="mt-2 text-gray-600 max-w-xl mx-auto">
             Purpose-driven technologist passionate about building engaging web experiences.
           </p>
