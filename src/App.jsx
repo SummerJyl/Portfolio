@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import AccordionCard from './components/AccordionCard';
+import Experience from './components/Experience';
+import ProjectsDropdown from './components/ProjectsDropdown';
 import ContactModal from './components/ContactModal';
 import ScreenshotGallery from './components/ScreenshotGallery';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
-import AccordionCard from './components/AccordionCard';
-import ProjectsDropdown from './components/ProjectsDropdown';
 
 export default function App() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -32,62 +33,32 @@ export default function App() {
     },
   ];
 
-  const experience = [
+
+  const techStack = [
     {
-      title: "Front End & Full Stack Web Developer",
-      company: "Self-Employed",
-      date: "2019 - Present",
-      bullets: [
-        "Developed React and Next.js-based web features, growth experiments in collaboration with marketing, product, and design teams",
-        "Integrated Contentful CMS to enable scalable and editable content across marketing campaigns",
-        "Implemented unit testing via Jest to maintain code stability and minimize regressions in production",
-        "Maintained Git versioning and participated in code reviews within agile sprint cycles"
-      ],
+      category: "Languages & Frameworks", 
+      items: "ReactJS • JavaScript • HTML • CSS • Node.js • Spring Boot • MongoDB • SQL • Express",
     },
+
     {
-      title: "Digital Marketing Manager (Contract) | Aquent",
-      date: "Mar 2022 - Mar 2023",
-      bullets: [
-        "Led website content strategy and inbound lead generation for B2B SaaS clients using HubSpot CMS and marketing automationn",
-        "Collaborated with engineering to refine API-driven content delivery and ensure performance across web properties",
-        "Designed and deployed SEO-optimized landing pages and content modules, resulting in a 25% increase in organic traffic",
-        "Worked cross-functionally to launch nurture campaigns using web behavior and CRM data for dynamic personalization"
-      ],
+      category: "CMS & SaaS Tools",
+      items: "WordPress • HubSpot • Umbraco • Shopify • Cascade CMS",
     },
+
     {
-      title: "Global Digital Activation Manager | Aquent",
-      date: "Oct 2020 - Jun 2021",
-      bullets: [
-        "Coordinated full-stack activation for 45+ React/Node.js eCommerce sites across global markets",
-        "Partnered with engineering to deploy secure, modular web apps integrated with PostgreSQL and MongoDB backends",
-        "Supported analytics reporting and visualization for KPIs related to customer retention and revenue growth",
-      ],
+      category: "Digital Marketing Tools",
+      items: "Google Analytics 4 • Google Tag Manager • SEMrush • BrightEdge • Optimizely • Tealium",
     },
+    
     {
-      title: "UX Manager / WebShop Manager",
-      date: "Jun 2017 - Dec 2018",
-      bullets: [
-        "Led front-end redevelopment efforts for a multi-brand eCommerce platform using a modular React architecture",
-        "Conducted UX research and implemented component-based design systems to improve user flow and checkout experience",
-        "Integrated Shopify and custom APIs for seamless order fulfillment and customer data sync",
-      ],
+      category: "Design & UI/UX",
+      items: "Figma • Adobe XD • Photoshop • Illustrator • After Effects",
     },
-  ];
-
-  const skills = [
-  "Languages & Frameworks", "ReactJS • JavaScript • HTML • CSS • Node.js • Spring Boot • MongoDB • SQL • Express",
-
-  "CMS & SaaS Tools",
-  "WordPress • HubSpot • Umbraco • Shopify • Cascade CMS",
-
-  "Digital Marketing Tools",
-  "Google Analytics 4 • Google Tag Manager • SEMrush • BrightEdge • Optimizely • Tealium",
-
-  "Design & UI/UX",
-  "Figma • Adobe XD • Photoshop • Illustrator • After Effects",
-
-  "Dev Tools",
-  "Git • GitHub • VS Code • JIRA • Lighthouse • Postman",
+     
+    {
+      category: "Dev Tools",
+      items: "Git • GitHub • VS Code • JIRA • Lighthouse • Postman",
+    }
   ];
 
   return (
@@ -146,42 +117,31 @@ export default function App() {
               <ProjectsDropdown projects={projects} />
             </AccordionCard>
           </div>
+
           <div className="w-full md:flex-1">
             <AccordionCard title="Experience">
-              <div className="space-y-6 text-left">
-                {experience.map((job, index) => (
-                  <div key={index}>
-                    <h3 className="font-semibold text-lg text-emerald-800">{job.title}</h3>
-                    {job.company && <p className="text-sm italic">{job.company}</p>}
-                    <p className="text-sm text-gray-600">{job.date}</p>
-                    <ul className="list-disc list-inside mt-2 text-sm space-y-1">
-                      {job.bullets.map((bullet, i) => (
-                        <li key={i}>{bullet}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
+              <Experience />
             </AccordionCard>
           </div>
+
           <div className="w-full md:flex-1">
-            <AccordionCard title="Tech Stack">
-              <div className="flex flex-wrap gap-2 justify-center">
-                {skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </AccordionCard>
+        <AccordionCard title="Tech Stack">
+          <div className="space-y-2">
+            {techStack.map(({ category, items }, idx) => (
+              <AccordionCard
+                key={idx}
+                title={<span className="text-emerald-800 text-base font-semibold">{category}</span>}
+              >
+                <p className="text-sm text-gray-700">{items}</p>
+              </AccordionCard>
+            ))}
           </div>
-        </div>
+        </AccordionCard>
+      </div>
       
         {/* Contact Modal */}
         {contactOpen && <ContactModal onClose={() => setContactOpen(false)} />}
+        </div>
         </main>
         </div>
     );

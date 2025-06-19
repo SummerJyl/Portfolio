@@ -27,24 +27,24 @@ export default function Projects() {
   return (
     <section style={{ marginBottom: '40px' }}>
       <h2>Projects</h2>
-      <div style={{ display: 'flex', gap: '15px' }}>
-        {projects.map(({ title, imgSrc, url }) => (
-          <a
-            key={title}
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textAlign: 'center', textDecoration: 'none', color: 'inherit' }}
-          >
-            <img
-              src={imgSrc}
-              alt={title}
-              style={{ width: '200px', borderRadius: '8px', display: 'block' }}
-            />
-            <p>{title}</p>
-          </a>
-        ))}
-      </div>
+      <div className="flex flex-wrap gap-4 justify-center">
+  {projects.map(({ title, imgSrc, url }) => (
+    <a
+      key={title}
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-center no-underline text-inherit w-48"
+    >
+      <img
+        src={imgSrc}
+        alt={title}
+        className="w-full rounded-lg mb-2"
+      />
+      <p className="text-sm font-medium">{title}</p>
+    </a>
+  ))}
+</div>
     </section>
   );
 }

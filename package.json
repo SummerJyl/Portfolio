@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-  "dev": "vite --base /Portfolio/",
+    "dev": "vite --base /Portfolio/",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
