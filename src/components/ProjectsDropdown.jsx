@@ -11,7 +11,7 @@ export default function ProjectsDropdown({ projects }) {
           <li key={index}>
             <button
               onClick={() => setSelectedProject(project)}
-              className="text-emerald-700 hover:underline font-semibold"
+              className="text-gray-700 hover:underline font-semibold"
             >
               {project.title}
             </button>

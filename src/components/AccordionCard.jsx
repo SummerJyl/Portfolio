@@ -4,7 +4,7 @@ export default function AccordionCard({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border rounded-md shadow-sm p-3 mb-4 bg-white">
+    <div className="border border-gray-400 rounded-xl shadow-sm p-4 mb-6 bg-transparent hover:bg-gray-100 transition text-center">
       <div
         className="cursor-pointer font-semibold text-lg"
         onClick={() => setIsOpen(!isOpen)}

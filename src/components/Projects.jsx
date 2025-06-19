@@ -12,7 +12,7 @@ const projects = [
     url: 'https://your-pfd-project-link.com',
   },
   {
-    title: 'Login Page',
+    title: 'Patient Login Prototype',
     imgSrc: '/screenshots/responsive-bhde.png',
     url: 'https://your-pfd-project-link.com',
   },

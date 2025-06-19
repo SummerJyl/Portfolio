@@ -118,32 +118,34 @@ export default function App() {
             className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
           />
           <h2 className="text-3xl font-semibold text-emerald-700">Web Developer | Bio Health Enthusiast</h2>
-          <p className="mt-2 text-gray-600 max-w-xl mx-auto">
-            Purpose-driven technologist passionate about building engaging web experiences.
+          <p className="mt-4 text-gray-600 max-w-xl mx-auto">
+            Hi, I’m Jylian Summers — a front-end web developer with 8+ years of experience building high-performance, conversion-focused eCommerce and health industry applications. 
+            I specialize in React, modular UI components, API integrations, and creating engaging user experiences. 
+            Passionate about clean code and collaboration, I love turning complex challenges into elegant solutions. Let’s build something impactful together!
           </p>
         </section>
 
         {/* Content Sections */}
         <div className="flex flex-col md:flex-row md:justify-between gap-6 mb-6 w-full">
           <div className="w-full md:flex-1">
-            <AccordionCard title="Projects">
+            <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Projects</span>}>
               <ProjectsDropdown projects={projects} />
             </AccordionCard>
           </div>
 
           <div className="w-full md:flex-1">
-            <AccordionCard title="Experience">
+            <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Experience</span>}>
               <Experience />
             </AccordionCard>
           </div>
 
           <div className="w-full md:flex-1">
-        <AccordionCard title="Tech Stack">
+        <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Tech Stack</span>}>
           <div className="space-y-2">
             {techStack.map(({ category, items }, idx) => (
               <AccordionCard
                 key={idx}
-                title={<span className="text-emerald-800 text-base font-semibold">{category}</span>}
+                title={<span className="text-gray-600 text-base font-semibold">{category}</span>}
               >
                 <p className="text-sm text-gray-700">{items}</p>
               </AccordionCard>
