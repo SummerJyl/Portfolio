@@ -23,12 +23,9 @@ export default function App() {
       url: "https://yourlivebiohealthlink.com",
     },
     {
-      title: "Login Page",
-      imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-login.jpeg`,
-      description: `I built a modern, responsive Login page using HTML5, CSS3, and JavaScript, featuring animated transitions between "Login" and "Create Account" states. 
-      The design leverages CSS Flexbox for layout, CSS keyframes for smooth UI animation, and modular architecture for scalability. 
-      Technologies like Webpack, TypeScript, and Redux enhance maintainability and performance.
-      Skills: HTML5 · CSS3 · JavaScript · CSS Flexbox · CSS Keyframes · TypeScript · Redux · Webpack · UI/UX Design.`,
+      title: "Patient Login Prototype",
+      videoSrc: `${import.meta.env.BASE_URL}videos/patLoginDemo.mp4`,
+      description: `Responsive login page with animated transitions and scalable architecture`,
       url: "https://yourliveloginpage.com",
     },
   ];

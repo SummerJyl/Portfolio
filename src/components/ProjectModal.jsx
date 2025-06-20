@@ -21,11 +21,25 @@ export default function ProjectModal({ project, onClose }) {
         </button>
 
         <h2 className="text-2xl font-semibold mb-4">{project.title}</h2>
+        {project.videoSrc ? (
+          <video
+            controls
+            className="w-full h-auto rounded mb-4 shadow-md"
+            poster={project.imgSrc} // optional: show screenshot before play
+            style={{ pointerEvents: 'auto', position: 'relative', zIndex: 9999 }}
+
+          >
+            <source src={project.videoSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
         <img 
           src={project.imgSrc} 
           alt={project.title} 
           className="w-full h-auto rounded mb-4"
         />
+        )}
+
         <p className="mb-4">{project.description}</p>
       </div>
     </div>
