@@ -1,46 +1,29 @@
 # 💻 Jylian Summers – Developer Portfolio
 
-A responsive personal portfolio site built with **React**, **Vite**, and **Tailwind CSS**. It showcases my recent projects, technical skills, and work experience, with an accessible design and modern UI best practices.
+This is my responsive developer portfolio built with **React**, **Vite**, and **Tailwind CSS**. It highlights select projects, technical skills, and experience — all presented with clean UI design and accessible layout practices.
 
-## 🔧 Tech Stack
+## 🛠 Tech Stack
 
-**Frontend:** React, Vite, Tailwind CSS  
+**Frontend:** React · Vite · Tailwind CSS  
 **Deployment:** GitHub Pages  
-**Tools:** ESLint, Prettier, GitHub Actions (CI/CD) 
+**Tooling:** ESLint · Prettier · GitHub Actions (CI/CD)  
+**Creative Tools:** DaVinci Resolve (video editing for UI demos)
 
 ---
 
-## 🐛 GitHub Pages Background Image Not Rendering (Case Study)
+## 🧠 Case Study: GitHub Pages & Broken Image Paths
 
-### Problem
-After deploying my React + Vite portfolio to GitHub Pages, everything worked **except the background image**, which appeared locally (`localhost`) but not on the live site at [https://summerjyl.github.io/Portfolio/](https://summerjyl.github.io/Portfolio/).
+### 🐞 Problem  
+After deploying to GitHub Pages, my background image didn’t render — despite working perfectly in local dev.
 
-### Diagnosis
-Vite uses `import.meta.env.BASE_URL` to resolve asset paths like images. On GitHub Pages, your project is hosted in a **subdirectory** (`/Portfolio/`), **not the root** (`/`). Without the correct base config, asset paths like `/images/bg-hero.png` are incorrectly resolved.
+### 🔍 Root Cause  
+Vite's asset paths require special handling for subdirectory deployments (like `/Portfolio/`).
 
-### Root Cause
-The Vite config was missing the `base` setting for subdirectory deployment:
+### ✅ Solution  
+Add the correct base path in your `vite.config.js`:
 
 ```js
-// vite.config.js
 export default defineConfig({
-  base: '/Portfolio/', // ← required for GitHub Pages
+  base: '/Portfolio/',
   plugins: [react()],
 });
-```
----
-### 🚀 Explore My Work
-
-Feel free to explore the projects and case studies to see how I build scalable, maintainable, and user-friendly web applications.
-
----
-
-### 📫 Contact
-
-- [LinkedIn](https://linkedin.com/in/your-linkedin-profile)  
-- [Email](mailto:your.jylian_summers@yahoo.com)  
-- [Portfolio Website](https://summerjyl.github.io/Portfolio/)  
-
----
-
-Thank you for visiting!
