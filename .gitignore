@@ -1,0 +1,32 @@
+# Node
+node_modules/
+.env
+.env.*        # in case you're using multiple env files
+
+# Build outputs
+/dist
+/build
+
+# VS Code
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Image and media folders (not necessary in Git if they're large or can be served via CDN)
+assets/
+images/
+videos/
+screenshots/
+public/bg-hero.*
+public/li-pix.*
+BioHlth-screenshots/
+Bio Health Identity/
+screenshots responsive/
+
+# Optional: Ignore anything from backup/test folders
+__tests__/
+coverage/
+*.log
+*.tmp
