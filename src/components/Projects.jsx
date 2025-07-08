@@ -3,7 +3,7 @@ import React from 'react';
 const projects = [
   {
     title: 'Bio Health Data Explorer',
-    imgSrc: '/BioHlth-screenshots/bhde-app.png',
+    imgSrc: '/screenshots/bhde-app.png',
     url: 'https://your-bio-health-project-link.com',
   },
   {
