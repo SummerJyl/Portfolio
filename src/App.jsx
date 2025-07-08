@@ -18,8 +18,8 @@ export default function App() {
     },
     {
       title: "Bio Health Data Explorer",
-      imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-bhde.png`,
-      description: "Interactive data explorer for Bio Health projects.",
+      imgSrc: `${import.meta.env.BASE_URL}screenshots/bhde-app.png`,
+      description: "An interactive web app designed to explore nutrition-related data for bio health projects. It integrates USDA datasets to provide users with up-to-date nutritional information.",
       url: "https://yourlivebiohealthlink.com",
     },
     {

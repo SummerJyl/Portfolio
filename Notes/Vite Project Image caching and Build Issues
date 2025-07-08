@@ -1,0 +1,62 @@
+Certainly! Here’s a concise note you can keep for reference about this issue and its fix:
+
+---
+
+## Note: Vite Project Image Caching and Build Issues
+
+**Issue:**
+After updating image assets (e.g., screenshots) in a Vite project, the old images still appear in the deployed or previewed site, causing broken or outdated visuals.
+
+**Root Causes:**
+
+* Old images remain in the `/public/screenshots` folder and get copied to `/dist/screenshots` during build.
+* Vite expects the main `index.html` file at the project root (not inside `/public`). If misplaced, build fails.
+* The `base` option in `vite.config.js/ts` may not match the subpath where the site is served, causing incorrect asset URLs.
+* Browser or server caching may cause stale images to persist.
+
+**Fix Steps:**
+
+1. **Ensure project structure is correct:**
+
+   * `index.html` must be in the project root (same folder as `package.json` and `vite.config.js/ts`).
+   * Static assets (images, fonts, etc.) go inside `/public` folder at the root.
+2. **Clean old or unused images:**
+
+   * Delete outdated or duplicate images from `/public/screenshots`.
+   * Example:
+
+     ```bash
+     rm /path/to/project/public/screenshots/old-image.png
+     ```
+3. **Update image references in code:**
+
+   * Use absolute paths relative to the root, e.g.,
+
+     ```jsx
+     <img src="/screenshots/new-image.png" alt="Description" />
+     ```
+4. **Set correct base path in `vite.config.js/ts`:**
+
+   * For dev server: `base: '/'`
+   * For production build (if served on subpath): `base: '/Portfolio/'` (replace with your actual subpath)
+5. **Rebuild the project:**
+
+   ```bash
+   npm run build
+   ```
+6. **Preview and verify:**
+
+   ```bash
+   npm run preview
+   ```
+
+   * Confirm images load correctly and URLs are accurate.
+7. **Deploy updated `dist` folder.**
+
+---
+
+This process ensures your Vite build includes only the correct, updated images and resolves broken image links caused by outdated assets or incorrect paths.
+
+---
+
+
