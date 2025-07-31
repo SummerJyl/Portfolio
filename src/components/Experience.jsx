@@ -3,45 +3,44 @@ import AccordionCard from './AccordionCard';
 
 const jobs = [
   {
-    title: "Front-End Developer Consultant",
-    company: "Self-Employed",
+    title: "Front-End Developer / Full Stack Consultant",
+    company: "Consultant",
     dates: "Jan 2019 – Present",
-    description: "Developed React and Next.js-based web features, growth experiments in collaboration with marketing, product, and design teams",
+    description: "Led enterprise platform modernization migrating Angular to React 18 for 10,000+ users, delivering 25% performance improvement through strategic component architecture, code splitting, and optimization techniques",
     responsibilities: [
-      "Integrated Contentful CMS to enable scalable and editable content across marketing campaigns",
-      "Implemented unit testing via Jest to maintain code stability and minimize regressions in production",
-      "Maintained Git versioning and participated in code reviews within agile sprint cycles",
+      "Architected scalable design system components creating reusable UI libraries that improved consistency across multiple product workflows while collaborating closely with UX designers and product managers",
+      "Made critical architectural decisions on frontend system design, performance trade-offs, and technology selection for complex data-driven interfaces serving enterprise clients",
+      "Mentored junior engineers establishing UI engineering best practices, testing strategies, and technical standards across development teams",
     ],
   },
   {
     title: "Digital Marketing Manager",
     company: "Aquent",
     dates: "Mar 2022 – Mar 2023",
-    description: "Led website content strategy and inbound lead generation for B2B SaaS clients using HubSpot CMS and marketing automation",
+    description: "Built high-performance data visualization dashboards using React and TypeScript, implementing real-time interfaces for analytics platforms with focus on web performance and user experience",
     responsibilities: [
-      "Collaborated with engineering to refine API-driven content delivery and ensure performance across web properties",
-      "Designed and deployed SEO-optimized landing pages and content modules, resulting in a 25% increase in organic traffic",
-      "Worked cross-functionally to launch nurture campaigns using web behavior and CRM data for dynamic personalization",
+      "Led cross-functional platform initiatives collaborating with product designers and backend engineers to deliver scalable tooling solutions maintaining 99.5% uptime",
+      "Established comprehensive testing frameworks including automated UI testing pipelines ensuring quality and reliability for production systems",
     ],
   },
   {
     title: "Global Digital Activation Manager",
     company: "Aquent",
     dates: "Oct 2020 – Jun 2021",
-    description: "Coordinated full-stack activation for 45+ React/Node.js eCommerce sites across global markets",
+    description: "Delivered enterprise UI solutions for global content platforms, implementing consistent design patterns and workflows across multiple international markets and device platformss",
     responsibilities: [
-      "Partnered with engineering to deploy secure, modular web apps integrated with PostgreSQL and MongoDB backends",
-      "Supported analytics reporting and visualization for KPIs related to customer retention and revenue growth",
+      "Collaborated with distributed product teams building scalable component architecture supporting complex publishing and content management workflows",
+      "Implemented performance monitoring and observability tools ensuring optimal user experience across different regions and platforms",
     ],
   },
   {
     title: "UX Manager",
     company: "WebShop Manager",
     dates: "Jun 2017 – Dec 2018",
-    description: "Led front-end redevelopment efforts for a multi-brand eCommerce platform using a modular React architecture",
+    description: "Built 45+ React applications focusing on user experience optimization and conversion-driven interface design for enterprise B2B workflows",
     responsibilities: [
-      "Conducted UX research and implemented component-based design systems to improve user flow and checkout experience",
-      "Integrated Shopify and custom APIs for seamless order fulfillment and customer data sync",
+      "Established UI engineering standards leading team of 3 developers while defining design system guidelines and accessibility requirements across multiple product initiatives",
+      "Integrated Shopify and custom APIs for seamless Architected complex workflow interfaces for content publishing, payment processing, and third-party integrations with emphasis on performance and scalabilityorder fulfillment and customer data sync",
     ],
   },
 ];
