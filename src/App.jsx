@@ -150,6 +150,12 @@ export default function App() {
           </div>
 
           <div className="w-full md:flex-1">
+          <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Open Source</span>}>
+            <OpenSource />
+          </AccordionCard>
+          </div>
+          
+          <div className="w-full md:flex-1">
         <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Tech Stack</span>}>
           <div className="space-y-2">
             {techStack.map(({ category, items }, idx) => (
