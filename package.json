@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "cp dist/index.html dist/404.html && gh-pages -d dist",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
     "react": "^18.2.0",

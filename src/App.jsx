@@ -30,31 +30,43 @@ export default function App() {
     },
   ];
 
-
+  const openSourceContributions = [
+    {
+      title: "ProyectoElden - Sports Booking Platform",
+      imgSrc: `${import.meta.env.BASE_URL}screenshots/proyectoelden-fix.png`, // Screenshot of your fix
+      description: "Fixed responsive navigation component improving mobile user experience. Resolved layout issues affecting booking functionality on smaller screens.",
+      url: "https://github.com/CamiloTriana75/ProyectoElden/pull/19", // Link to your PR
+      status: "Merged", // or "In Review"
+      technologies: ["React", "CSS", "JavaScript"]
+    },
+    {
+      title: "[Second Project] - [Description]",
+      imgSrc: `${import.meta.env.BASE_URL}screenshots/second-contribution.png`,
+      description: "[What you fixed/added]",
+      url: "https://github.com/[username]/[repo]/pull/[number]",
+      status: "Merged", // or "In Review" 
+      technologies: ["List", "Technologies", "Used"]
+    }
+  ];
   const techStack = [
     {
-      category: "Languages & Frameworks", 
-      items: "ReactJS • JavaScript • HTML • CSS • Node.js • Spring Boot • MongoDB • SQL • Express",
+      category: "UI Engineering", 
+      items: "React 18 • TypeScript • Modern JavaScript (ES6+) • HTML5 • CSS3 • Responsive Design",
     },
 
     {
-      category: "CMS & SaaS Tools",
-      items: "WordPress • HubSpot • Umbraco • Shopify • Cascade CMS",
-    },
-
-    {
-      category: "Digital Marketing Tools",
-      items: "Google Analytics 4 • Google Tag Manager • SEMrush • BrightEdge • Optimizely • Tealium",
+      category: "Architecture & Performance",
+      items: "Design Systems • Component Libraries • Web Performance Optimization • Accessibility (WCAG)",
     },
     
     {
-      category: "Design & UI/UX",
-      items: "Figma • Adobe XD • Photoshop • Illustrator • After Effects",
+      category: "API & Data",
+      items: "REST APIs • Java Spring Boot • Node.js • Real-time Data Interfaces • Microservices",
     },
      
     {
-      category: "Dev Tools",
-      items: "Git • GitHub • VS Code • JIRA • Lighthouse • Postman",
+      category: "Testing & Tools",
+      items: "Jest • Git • Cypress • Playwright • Webpack • Vite • Ci/CD • Agile/Scrum",
     }
   ];
 
