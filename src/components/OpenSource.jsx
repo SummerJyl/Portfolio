@@ -13,7 +13,6 @@ const openSourceContributions = [
 export default function OpenSource() {
   return (
     <section style={{ marginBottom: '40px' }}>
-      <h2>Open Source Contributions</h2>
       <div className="flex flex-wrap gap-4 justify-center">
         {openSourceContributions.map(({ title, url, description, status, technologies }) => (
           <a
