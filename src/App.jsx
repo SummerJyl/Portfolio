@@ -14,19 +14,19 @@ export default function App() {
     {
       title: "Personal Finance Dashboard",
       imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-pfd.jpeg`,
-      description: "A React-based dashboard for managing personal finances.",
+      description: "A full-stack financial data processing application with real-time analytics and dynamic visualization capabilities. Built with React frontend and Node.js backend to handle high-volume transaction data processing and performance optimization.",
       url: "https://yourlivepfdlink.com",
     },
     {
       title: "Bio Health Data Explorer",
       imgSrc: `${import.meta.env.BASE_URL}screenshots/bhde-app.png`,
-      description: "An interactive web app designed to explore nutrition-related data for bio health projects. It integrates USDA datasets to provide users with up-to-date nutritional information.",
+      description: "A comprehensive real-time data processing platform for scientific health data management. Built with distributed cloud architecture to handle high-volume, sensitive data processing workflows with regulatory compliance and performance optimization.",
       url: "https://yourlivebiohealthlink.com",
     },
     {
       title: "Patient Login Prototype",
       videoSrc: `${import.meta.env.BASE_URL}videos/patLoginDemo.mp4`,
-      description: `Responsive login page with animated transitions and scalable architecture`,
+      description:"A secure, scalable authentication system designed for healthcare applications with focus on user experience optimization and responsive design. Built with modern web technologies to handle sensitive medical data access with regulatory compliance protocols.",
       url: "https://yourliveloginpage.com",
     },
   ];
@@ -128,8 +128,9 @@ export default function App() {
           />
           <h2 className="text-3xl font-semibold text-emerald-700">Web Developer | Bio Health Enthusiast</h2>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            Hi, I'm Jylian Summers — a full-stack software engineer with expertise in real-time data processing, cloud infrastructure, and scientific computing applications. I specialize in React, Node.js, RESTful APIs, and building scalable systems for complex data workflows. Passionate about solving deep technical challenges and rapid technology adoption, I love turning complex problems into robust, maintainable solutions. 
-            
+            Hi, I'm Jylian Summers — a full-stack software engineer with expertise in real-time data processing, cloud infrastructure, and scientific computing applications. 
+            I specialize in React, Node.js, RESTful APIs, and building scalable systems for complex data workflows. 
+            Passionate about solving deep technical challenges and rapid technology adoption, I love turning complex problems into robust, maintainable solutions. 
              Let’s build something impactful together!
           </p>
         </section>
