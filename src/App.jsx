@@ -126,7 +126,7 @@ export default function App() {
             alt="Jylian Summers"
             className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
           />
-          <h2 className="text-3xl font-semibold text-emerald-700">Web Developer | Bio Health Enthusiast</h2>
+      <h2 className="text-3xl font-semibold text-emerald-700">Full Stack Developer | Bio Health Enthusiast</h2>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
             Hi, I'm Jylian Summers — a full-stack software engineer with expertise in real-time data processing, cloud infrastructure, and scientific computing applications. 
             I specialize in React, Node.js, RESTful APIs, and building scalable systems for complex data workflows. 
