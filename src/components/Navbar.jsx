@@ -9,7 +9,7 @@ export default function Navbar() {
       <nav className="flex flex-col items-center justify-center px-6 py-4 border-b border-gray-300 md:flex-row md:justify-between">
         {/* Centered Name */}
         <h1 className="text-2xl font-bold mb-2 md:mb-0 text-center">
-          Jylian Summers | Web Developer
+          Jylian Summers | Full Stack Developer
         </h1>
 
         {/* Right side: Contact, GitHub, LinkedIn */}
