@@ -8,7 +8,14 @@ const openSourceContributions = [
       status: "Merged", // or "In Review"
       technologies: ["React", "CSS", "JavaScript"]
     },
-  ];
+    {
+    title: "Idrinth GameMasterAI Dataset", 
+    description: "Improved README.md documentation for Hugging Face dataset, enhancing clarity and usability for ML practitioners.",
+    url: "https://github.com/Idrinth/[repo]/pull/[number]",
+    status: "Completed",
+    technologies: ["Hugging Face", "Machine Learning", "Documentation", "AI Datasets"]
+  }
+];
 
 export default function OpenSource() {
   return (

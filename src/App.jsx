@@ -41,12 +41,11 @@ export default function App() {
       technologies: ["React", "CSS", "JavaScript"]
     },
     {
-      title: "[Second Project] - [Description]",
-      imgSrc: `${import.meta.env.BASE_URL}screenshots/second-contribution.png`,
-      description: "[What you fixed/added]",
-      url: "https://github.com/[username]/[repo]/pull/[number]",
-      status: "Merged", // or "In Review" 
-      technologies: ["List", "Technologies", "Used"]
+      title: "[Repository Name]",
+      description: "[What you fixed/contributed]",
+      url: "https://github.com/[pr-link]",
+      status: "Completed", // or "Resolved"
+      technologies: ["List", "Technologies"]
     }
   ];
   const techStack = [
@@ -129,9 +128,9 @@ export default function App() {
           />
           <h2 className="text-3xl font-semibold text-emerald-700">Web Developer | Bio Health Enthusiast</h2>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            Hi, I’m Jylian Summers — a front-end web developer with 8+ years of experience building high-performance, conversion-focused eCommerce and health industry applications. 
-            I specialize in React, modular UI components, API integrations, and creating engaging user experiences. 
-            Passionate about clean code and collaboration, I love turning complex challenges into elegant solutions. Let’s build something impactful together!
+            Hi, I'm Jylian Summers — a full-stack software engineer with expertise in real-time data processing, cloud infrastructure, and scientific computing applications. I specialize in React, Node.js, RESTful APIs, and building scalable systems for complex data workflows. Passionate about solving deep technical challenges and rapid technology adoption, I love turning complex problems into robust, maintainable solutions. 
+            
+             Let’s build something impactful together!
           </p>
         </section>
 
@@ -154,7 +153,7 @@ export default function App() {
             <OpenSource />
           </AccordionCard>
           </div>
-          
+
           <div className="w-full md:flex-1">
         <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Tech Stack</span>}>
           <div className="space-y-2">
