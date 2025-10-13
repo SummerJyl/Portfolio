@@ -3,44 +3,43 @@ import AccordionCard from './AccordionCard';
 
 const jobs = [
   {
-    title: "Front-End Developer / Full Stack Consultant",
+    title: "Software Engineer | Full-Stack",
     company: "Consultant",
     dates: "Jan 2019 – Present",
-    description: "Led enterprise platform modernization migrating Angular to React 18 for 10,000+ users, delivering 25% performance improvement through strategic component architecture, code splitting, and optimization techniques",
-    responsibilities: [
-      "Architected scalable design system components creating reusable UI libraries that improved consistency across multiple product workflows while collaborating closely with UX designers and product managers",
-      "Made critical architectural decisions on frontend system design, performance trade-offs, and technology selection for complex data-driven interfaces serving enterprise clients",
-      "Mentored junior engineers establishing UI engineering best practices, testing strategies, and technical standards across development teams",
+    description:  "Built Bio Health Data Management System - full-stack healthcare application with React frontend, Spring Boot backend, and PostgreSQL database supporting nutrition tracking and scientific data workflows",
+    responsibilities: [     
+      "Developed ETL pipelines integrating USDA Food Database API, transforming unstructured data into structured, searchable format with automated validation", 
+      "Architected RESTful APIs achieving sub-200ms response times with MongoDB/DynamoDB for flexible schemas and high-throughput operations",
+      "Implemented cloud-native architecture on AWS with containerized microservices, distributed data processing, and performance optimization",
+      "Designed complex data models with temporal versioning, audit trails, and user authentication for healthcare compliance requirements",
     ],
   },
   {
-    title: "Digital Marketing Manager",
+    title: "Technology Solutions Developer",
     company: "Aquent",
     dates: "Mar 2022 – Mar 2023",
-    description: "Built high-performance data visualization dashboards using React and TypeScript, implementing real-time interfaces for analytics platforms with focus on web performance and user experience",
+    description: "Developed consumer health applications with React and backend APIs processing real-time data from multiple sources",
     responsibilities: [
-      "Led cross-functional platform initiatives collaborating with product designers and backend engineers to deliver scalable tooling solutions maintaining 99.5% uptime",
-      "Established comprehensive testing frameworks including automated UI testing pipelines ensuring quality and reliability for production systems",
+      "Built data transformation pipelines with quality validation, monitoring, and automated error handling",
+      "Optimized database performance through indexing strategies, query refactoring, and caching, improving response times by 60%",
     ],
   },
   {
-    title: "Global Digital Activation Manager",
+    title: "Systems Integration Developer",
     company: "Aquent",
     dates: "Oct 2020 – Jun 2021",
-    description: "Delivered enterprise UI solutions for global content platforms, implementing consistent design patterns and workflows across multiple international markets and device platformss",
+    description: "•	Designed distributed data infrastructure with multi-region synchronization supporting international operations",
     responsibilities: [
-      "Collaborated with distributed product teams building scalable component architecture supporting complex publishing and content management workflows",
-      "Implemented performance monitoring and observability tools ensuring optimal user experience across different regions and platforms",
+      "•	Created integration frameworks normalizing data across disparate sources with consistent APIs and governance practices",
     ],
   },
   {
-    title: "UX Manager",
+    title: "Software Developer | Technical Solutions",
     company: "WebShop Manager",
     dates: "Jun 2017 – Dec 2018",
-    description: "Built 45+ React applications focusing on user experience optimization and conversion-driven interface design for enterprise B2B workflows",
+    description: "•	Developed mission-critical backend services with PostgreSQL supporting complex business workflows and external integrations",
     responsibilities: [
-      "Established UI engineering standards leading team of 3 developers while defining design system guidelines and accessibility requirements across multiple product initiatives",
-      "Integrated Shopify and custom APIs for seamless Architected complex workflow interfaces for content publishing, payment processing, and third-party integrations with emphasis on performance and scalabilityorder fulfillment and customer data sync",
+      "•	Built data processing pipelines handling structured and unstructured data with validation and quality assurance",
     ],
   },
 ];
