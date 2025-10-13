@@ -4,7 +4,7 @@ const projects = [
   {
     title: 'Azure Microservices Demo',
     description: 'Production-ready microservices architecture with TypeScript, Azure Queue Storage, Redis caching, and Docker containerization. Demonstrates async job processing and REST API design.',
-    imgSrc: '/screenshots/azure-microservices.png', // You'll need to add a screenshot
+    imgSrc: '/screenshots/azure-microservices.png',
     url: 'https://github.com/SummerJyl/azure-microservices-demo',
     tags: ['TypeScript', 'Azure', 'Redis', 'Docker', 'Node.js'],
     featured: true,

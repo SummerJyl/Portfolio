@@ -12,6 +12,12 @@ export default function App() {
 
   const projects = [
     {
+      title: "Azure Microservices Demo",
+      imgSrc: `${import.meta.env.BASE_URL}screenshots/azure-microservices.png`,
+      description: "Production-ready microservices architecture with TypeScript, Azure Queue Storage, Redis caching, and Docker containerization. Demonstrates async job processing, REST API design, and cloud-native application patterns with comprehensive documentation.",
+      url: "https://github.com/SummerJyl/azure-microservices-demo",
+      featured: true,
+    },    {
       title: "Personal Finance Dashboard",
       imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-pfd.jpeg`,
       description: "A full-stack financial data processing application with real-time analytics and dynamic visualization capabilities. Built with React frontend and Node.js backend to handle high-volume transaction data processing and performance optimization.",
