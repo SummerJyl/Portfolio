@@ -3,33 +3,41 @@ import React from 'react';
 const projects = [
   {
     title: 'Azure Microservices Demo',
-    description: 'Production-ready microservices architecture with TypeScript, Azure Queue Storage, Redis caching, and Docker containerization. Demonstrates async job processing and REST API design.',
     imgSrc: '/screenshots/azure-microservices.png',
     url: 'https://github.com/SummerJyl/azure-microservices-demo',
     tags: ['TypeScript', 'Azure', 'Redis', 'Docker', 'Node.js'],
     featured: true,
-  },
+  variants: {
+    general: 'Production-ready microservices architecture with TypeScript, Azure Queue Storage, Redis caching, and Docker containerization. Demonstrates async job processing and REST API design.'
+  }
+},
   {
     title: 'Bio Health Data Explorer',
-    description: 'Interactive health data visualization and analysis platform',
     imgSrc: '/screenshots/bhde-app.png',
     url: 'https://your-bio-health-project-link.com',
     tags: ['React', 'Data Visualization'],
+    variants: {
+    general: 'Interactive health data visualization and analysis platform'
+    }
   },
   {
     title: 'Personal Finance Dashboard',
-    description: 'Responsive financial tracking application',
     imgSrc: '/screenshots/responsive-pfd.jpeg',
     url: 'https://your-pfd-project-link.com',
     tags: ['React', 'UI/UX'],
+    variants: {
+    general: 'Responsive financial tracking application'
+    }
   },
   {
     title: 'Patient Login Prototype',
-    description: 'Healthcare portal authentication flow',
     videoSrc: '/videos/patLoginDemo.mp4',
     url: 'https://your-pfd-project-link.com',
     tags: ['React', 'Healthcare'],
-  },
+    variants: {
+    general: 'Healthcare portal authentication flow'
+  }
+  }
 ];
 
 export default function Projects() {
