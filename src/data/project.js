@@ -14,10 +14,10 @@ const projects = [
   {
     title: 'Bio Health Data Explorer',
     imgSrc: '/screenshots/bhde-app.png',
-    url: 'https://your-bio-health-project-link.com',
-    tags: ['React', 'Data Visualization'],
+    url: 'https://github.com/SummerJyl/Data-Explore',
+    tags: ['React', 'Spring Boot', 'PostgreSQL', 'TypeScript', 'REST API'],
     variants: {
-    general: 'Interactive health data visualization and analysis platform'
+    general: 'Full-stack nutrition tracking platform with USDA food database integration, nutrition goal management, and macro filtering'
     }
   },
   {
