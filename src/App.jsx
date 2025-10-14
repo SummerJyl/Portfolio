@@ -55,27 +55,31 @@ export default function App() {
     }
   ];
   const techStack = [
-    {
-      category: "UI Engineering", 
-      items: "React 18 • TypeScript • Modern JavaScript (ES6+) • HTML5 • CSS3 • Responsive Design",
-    },
-
-    {
-      category: "Architecture & Performance",
-      items: "Design Systems • Component Libraries • Web Performance Optimization • Accessibility (WCAG)",
-    },
-    
-    {
-      category: "API & Data",
-      items: "REST APIs • Java Spring Boot • Node.js • Real-time Data Interfaces • Microservices",
-    },
-     
-    {
-      category: "Testing & Tools",
-      items: "Jest • Git • Cypress • Playwright • Webpack • Vite • Ci/CD • Agile/Scrum",
-    }
-  ];
-
+  {
+    category: "Frontend Development", 
+    items: "React • TypeScript • JavaScript • Angular • HTML5/CSS3 • Tailwind CSS • Responsive Design",
+  },
+  {
+    category: "Backend & APIs",
+    items: "Java (Spring Boot) • Python • Node.js • Express • REST APIs • Microservices Architecture",
+  },
+  {
+    category: "Databases & Data",
+    items: "PostgreSQL • MongoDB • DynamoDB • MySQL • SQL • ETL/ELT Pipelines • Data Modeling",
+  },
+  {
+    category: "Cloud & Infrastructure",
+    items: "AWS • Azure • Docker • Kubernetes • Serverless • CI/CD • Git/GitHub",
+  },
+  {
+    category: "Data Engineering",
+    items: "Real-time Processing • API Integration • Data Transformation • Performance Optimization",
+  },
+  {
+    category: "Tools & Practices",
+    items: "Postman • VS Code • Figma • Jest • Agile/Scrum • Test-Driven Development",
+  }
+];
   return (
   <div
     className="min-h-[100vh] flex flex-col text-gray-900 px-4 py-6 font-lato"
