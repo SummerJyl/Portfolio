@@ -1,11 +1,11 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/Portfolio/', // ✅ VERY IMPORTANT for GitHub Pages under a subfolder
+  base: '/Portfolio/', // must match your repo name for GitHub Pages
   plugins: [react()],
 });
+
 
 
 
