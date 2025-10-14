@@ -1,11 +1,12 @@
 import React from 'react';
 
 const skillCategories = {
-  'Frontend': ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind CSS'],
-  'Backend': ['Node.js', 'Express', 'REST APIs', 'Microservices'],
-  'Cloud & DevOps': ['Azure', 'Docker', 'Git', 'CI/CD'],
-  'Data & Caching': ['Redis', 'Azure Queue Storage', 'SQL', 'API Integration'],
-  'Tools': ['VS Code', 'Figma', 'Postman', 'Azure Portal']
+  'Frontend': ['React', 'TypeScript', 'JavaScript', 'Angular', 'HTML5/CSS3', 'Tailwind CSS'],
+  'Backend': ['Java (Spring Boot)', 'Python', 'Node.js', 'Express', 'REST APIs', 'Microservices'],
+  'Databases': ['PostgreSQL', 'MongoDB', 'DynamoDB', 'MySQL', 'SQL'],
+  'Cloud & Infrastructure': ['AWS', 'Azure', 'Docker', 'Kubernetes', 'Serverless'],
+  'Data Engineering': ['ETL/ELT Pipelines', 'Data Modeling', 'API Integration', 'Real-time Processing'],
+  'DevOps & Tools': ['Git/GitHub', 'CI/CD', 'Postman', 'VS Code', 'Agile/Scrum']
 };
 
 export default function Skills() {
