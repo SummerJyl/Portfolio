@@ -30,3 +30,4 @@ __tests__/
 coverage/
 *.log
 *.tmp
+node_modules/
