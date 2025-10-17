@@ -16,7 +16,6 @@ Thumbs.db
 
 # Image and media folders (not necessary in Git if they're large or can be served via CDN)
 assets/
-images/
 videos/
 screenshots/
 public/bg-hero.*
