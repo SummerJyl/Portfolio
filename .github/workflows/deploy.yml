@@ -30,6 +30,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
+      - name: Debug - Check public folder BEFORE
+        run: |
+          echo "Contents of public folder:"
+          ls -laR public/ || echo "public folder does not exist" 
+           
       - name: Build
         run: npm run build
         
