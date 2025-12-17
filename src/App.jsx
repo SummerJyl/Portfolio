@@ -97,13 +97,13 @@ export default function App() {
   const projects = [
     {
       title: "Azure Microservices Demo",
-      imgSrc: "/Public/screenshots/azure-microservices.png",
+      imgSrc: "/`${import.meta.env.BASE_URL}screenshots/azure-microservices.png",
       description: "Production-ready microservices architecture with TypeScript, Azure Queue Storage, Redis caching, and Docker containerization. Demonstrates async job processing, REST API design, and cloud-native application patterns with comprehensive documentation.",
       url: "https://github.com/SummerJyl/azure-microservices-demo",
       featured: true,
     },     {
       title: "Personal Finance Dashboard",
-      imgSrc: "/Public/screenshots/responsive-pfd.jpeg",
+      imgSrc: "`${import.meta.env.BASE_URL}screenshots/responsive-pfd.jpeg",
       description: "A full-stack financial data processing application with real-time analytics and dynamic visualization capabilities. Built with React frontend and Node.js backend to handle high-volume transaction data processing and performance optimization.",
       url: "https://yourlivepfdlink.com",
     },
@@ -115,7 +115,7 @@ export default function App() {
     },
     {
       title: "Patient Login Prototype",
-      videoSrc: "/Public/videos/patLoginDemo.mp4",
+      videoSrc: "`${import.meta.env.BASE_URL}videos/patLoginDemo.mp4",
       description:"A secure, scalable authentication system designed for healthcare applications with focus on user experience optimization and responsive design. Built with modern web technologies to handle sensitive medical data access with regulatory compliance protocols.",
       url: "https://yourliveloginpage.com",
     },
