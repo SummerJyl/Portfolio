@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import AccordionCard from './components/AccordionCard';
+import Hero from './components/Hero';
+import Skills from './components/Skills';
 import Experience from './components/Experience';
+import AccordionCard from './components/AccordionCard';
 import OpenSource from './components/OpenSource';
 import ProjectsDropdown from './components/ProjectsDropdown';
 import ContactModal from './components/ContactModal';
@@ -54,32 +56,7 @@ export default function App() {
       technologies: ["List", "Technologies"]
     }
   ];
-  const techStack = [
-  {
-    category: "Frontend Development", 
-    items: "React • TypeScript • JavaScript • Angular • HTML5/CSS3 • Tailwind CSS • Responsive Design",
-  },
-  {
-    category: "Backend & APIs",
-    items: "Java (Spring Boot) • Python • Node.js • Express • REST APIs • Microservices Architecture",
-  },
-  {
-    category: "Databases & Data",
-    items: "PostgreSQL • MongoDB • DynamoDB • MySQL • SQL • ETL/ELT Pipelines • Data Modeling",
-  },
-  {
-    category: "Cloud & Infrastructure",
-    items: "AWS • Azure • Docker • Kubernetes • Serverless • CI/CD • Git/GitHub",
-  },
-  {
-    category: "Data Engineering",
-    items: "Real-time Processing • API Integration • Data Transformation • Performance Optimization",
-  },
-  {
-    category: "Tools & Practices",
-    items: "Postman • VS Code • Figma • Jest • Agile/Scrum • Test-Driven Development",
-  }
-];
+  
   return (
   <div
     className="min-h-[100vh] flex flex-col text-gray-900 px-4 py-6 font-lato"
@@ -138,10 +115,10 @@ export default function App() {
           />
       <h2 className="text-3xl font-semibold text-emerald-700">Full Stack Developer | Bio Health Enthusiast</h2>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            Hi, I'm Jylian Summers — a full-stack software engineer with expertise in real-time data processing, cloud infrastructure, and scientific computing applications. 
-            I specialize in React, Node.js, RESTful APIs, and building scalable systems for complex data workflows. 
-            Passionate about solving deep technical challenges and rapid technology adoption, I love turning complex problems into robust, maintainable solutions. 
-             Let’s build something impactful together!
+            Hi, I’m Jylian Summers — a senior full-stack engineer passionate about building scalable, high-performance web applications and data-driven solutions for healthcare and complex domains. 
+        I specialize in React, Node.js, Python, and Ruby on Rails, with deep expertise in cloud architecture (AWS certified), RESTful APIs, microservices, and real-time data workflows.
+
+        I thrive on turning complex problems into maintainable, mission-critical solutions, whether it’s designing distributed systems, optimizing databases, or integrating A
           </p>
         </section>
 
