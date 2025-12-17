@@ -7,10 +7,6 @@ import OpenSource from './components/OpenSource';
 import ProjectsDropdown from './components/ProjectsDropdown';
 import ContactModal from './components/ContactModal';
 import ScreenshotGallery from './components/ScreenshotGallery';
-import bhdeImg from './screenshots/bhde-app.png';
-import patLoginDemo from './videos/patLoginDemo.mp4';
-import azureImg from './screenshots/azure-microservices.png';
-import pfdImg from './screenshots/responsive-pfd.jpeg';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const techStack = [
