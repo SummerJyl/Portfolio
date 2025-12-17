@@ -9,6 +9,88 @@ import ContactModal from './components/ContactModal';
 import ScreenshotGallery from './components/ScreenshotGallery';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
+export const techStack = [
+  {
+    category: "Full Stack",
+    items: [
+      { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "Vue.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+      { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+      { name: "JavaScript (ES6+)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { name: "Next.js", icon: "" }, // no official icon, leave blank or add custom
+      { name: "Modern Web Frameworks", icon: "" },
+      { name: "Component Architecture", icon: "" }
+    ]
+  },
+  {
+    category: "Backend Development",
+    items: [
+      { name: "Python (expert)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { name: "Ruby on Rails", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" },
+      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+      { name: "Spring Boot", icon: "" },
+      { name: "RESTful APIs", icon: "" },
+      { name: "Microservices", icon: "" },
+      { name: "API Design", icon: "" },
+      { name: "Webhooks", icon: "" },
+      { name: "Data Transformation", icon: "" }
+    ]
+  },
+  {
+    category: "Data & Databases",
+    items: [
+      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+      { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+      { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
+      { name: "Relational Schema Design", icon: "" },
+      { name: "Efficient Data Models", icon: "" },
+      { name: "SQL Optimization", icon: "" }
+    ]
+  },
+  {
+    category: "Integrations & Workflows",
+    items: [
+      { name: "API Integrations", icon: "" },
+      { name: "Data Transformation Pipelines", icon: "" },
+      { name: "Service Orchestration", icon: "" },
+      { name: "Event-driven Systems", icon: "" }
+    ]
+  },
+  {
+    category: "Cloud & Infrastructure",
+    items: [
+      { name: "AWS (EC2, S3, RDS, Lambda)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
+      { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+      { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { name: "CI/CD Pipelines", icon: "" },
+      { name: "Distributed Systems", icon: "" },
+      { name: "Serverless Applications", icon: "" }
+    ]
+  },
+  {
+    category: "Observability & Performance",
+    items: [
+      { name: "System Monitoring", icon: "" },
+      { name: "Performance Optimization", icon: "" },
+      { name: "Debugging", icon: "" },
+      { name: "Production Reliability", icon: "" }
+    ]
+  },
+  {
+    category: "Development Practices",
+    items: [
+      { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+      { name: "Async Communication", icon: "" },
+      { name: "Code Review", icon: "" },
+      { name: "Pairing", icon: "" },
+      { name: "Remote Collaboration", icon: "" },
+      { name: "Agile Methodologies", icon: "" }
+    ]
+  }
+];
 export default function App() {
   const [contactOpen, setContactOpen] = useState(false);
 
