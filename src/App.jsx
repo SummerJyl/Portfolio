@@ -7,6 +7,7 @@ import OpenSource from './components/OpenSource';
 import ProjectsDropdown from './components/ProjectsDropdown';
 import ContactModal from './components/ContactModal';
 import ScreenshotGallery from './components/ScreenshotGallery';
+import bhdeImg from './screenshots/bhde-app.png';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const techStack = [
@@ -97,25 +98,25 @@ export default function App() {
   const projects = [
     {
       title: "Azure Microservices Demo",
-      imgSrc: `${import.meta.env.BASE_URL}screenshots/azure-microservices.png`,
+      imimgSrc: azureImg,
       description: "Production-ready microservices architecture with TypeScript, Azure Queue Storage, Redis caching, and Docker containerization. Demonstrates async job processing, REST API design, and cloud-native application patterns with comprehensive documentation.",
       url: "https://github.com/SummerJyl/azure-microservices-demo",
       featured: true,
     },     {
       title: "Personal Finance Dashboard",
-      imgSrc: `${import.meta.env.BASE_URL}screenshots/responsive-pfd.jpeg`,
+      imgSrc: pfdImg,
       description: "A full-stack financial data processing application with real-time analytics and dynamic visualization capabilities. Built with React frontend and Node.js backend to handle high-volume transaction data processing and performance optimization.",
       url: "https://yourlivepfdlink.com",
     },
     {
       title: "Bio Health Data Explorer",
-      imgSrc: `${import.meta.env.BASE_URL}screenshots/bhde-app.png`,
+       imgSrc: bhdeImg,
       description: "A comprehensive real-time data processing platform for scientific health data management. Built with distributed cloud architecture to handle high-volume, sensitive data processing workflows with regulatory compliance and performance optimization.",
       url: "https://yourlivebiohealthlink.com",
     },
     {
       title: "Patient Login Prototype",
-      videoSrc: `${import.meta.env.BASE_URL}videos/patLoginDemo.mp4`,
+      videoSrc: patLoginDemo,
       description:"A secure, scalable authentication system designed for healthcare applications with focus on user experience optimization and responsive design. Built with modern web technologies to handle sensitive medical data access with regulatory compliance protocols.",
       url: "https://yourliveloginpage.com",
     },
