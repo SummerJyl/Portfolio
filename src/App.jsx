@@ -197,10 +197,11 @@ export default function App() {
           />
       <h2 className="text-3xl font-semibold text-emerald-700">Full Stack Developer | Bio Health Enthusiast</h2>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            Hi, I’m Jylian Summers — a senior full-stack engineer passionate about building scalable, high-performance web applications and data-driven solutions for healthcare and complex domains. 
-        I specialize in React, Node.js, Python, and Ruby on Rails, with deep expertise in cloud architecture (AWS certified), RESTful APIs, microservices, and real-time data workflows.
+            Hi, I’m Jylian Summers — Senior Full Stack Engineer with 8+ years building scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL. AWS certified with expertise in cloud architecture, serverless applications, and distributed systems.
 
-        I thrive on turning complex problems into maintainable, mission-critical solutions, whether it’s designing distributed systems, optimizing databases, or integrating A
+            I specialize in architecting APIs, optimizing databases, and delivering mission-critical applications for healthcare and complex domains. My work spans real-time data processing pipelines, microservices architecture, and AI-integrated workflows.
+
+            As a technical leader, I mentor teams, drive architectural decisions, and balance rapid iteration with long-term scalability. I thrive in ambiguous, fast-paced environments where engineering shapes product strategy.
           </p>
         </section>
 
