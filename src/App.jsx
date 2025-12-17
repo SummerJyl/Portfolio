@@ -109,7 +109,7 @@ export default function App() {
     },
     {
       title: "Bio Health Data Explorer",
-      imgSrc: "/Public/screenshots/bhde-app.png",
+      imgSrc: "/Public/BioHlth-screenshots/responsiveBHDE.png",
       description: "A comprehensive real-time data processing platform for scientific health data management. Built with distributed cloud architecture to handle high-volume, sensitive data processing workflows with regulatory compliance and performance optimization.",
       url: "https://yourlivebiohealthlink.com",
     },
