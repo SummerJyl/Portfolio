@@ -195,13 +195,14 @@ export default function App() {
             alt="Jylian Summers"
             className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
           />
-      <h2 className="text-3xl font-semibold text-emerald-700">Full Stack Developer | Bio Health Enthusiast</h2>
+      <h2 className="text-3xl font-semibold text-emerald-700">Senior Full Stack Engineer | Bio Health Enthusiast</h2>
           <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            Hi, I’m Jylian Summers — Senior Full Stack Engineer with 8+ years building scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL. AWS certified with expertise in cloud architecture, serverless applications, and distributed systems.
-
-            I specialize in architecting APIs, optimizing databases, and delivering mission-critical applications for healthcare and complex domains. My work spans real-time data processing pipelines, microservices architecture, and AI-integrated workflows.
-
-            As a technical leader, I mentor teams, drive architectural decisions, and balance rapid iteration with long-term scalability. I thrive in ambiguous, fast-paced environments where engineering shapes product strategy.
+            Hi, I’m Jylian Summers — Senior Full Stack Engineer with 8+ years building scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL. 
+            AWS certified with expertise in cloud architecture, serverless applications, and distributed systems.
+            I specialize in architecting APIs, optimizing databases, and delivering mission-critical applications for healthcare and complex domains. 
+            My work spans real-time data processing pipelines, microservices architecture, and AI-integrated workflows.
+            As a technical leader, I mentor teams, drive architectural decisions, and balance rapid iteration with long-term scalability. 
+            I thrive in ambiguous, fast-paced environments where engineering shapes product strategy.
           </p>
         </section>
 
