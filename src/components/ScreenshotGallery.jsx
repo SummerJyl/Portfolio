@@ -3,28 +3,44 @@ import React from 'react';
 export default function ScreenshotGallery({ projects }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {projects.map(({ title, imgSrc, description, url }, idx) => (
+      {projects.map(({ title, imgSrc, videoSrc, description, url }, idx) => (
         <div
           key={idx}
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
           className="block border rounded-lg overflow-hidden shadow hover:shadow-lg transition"
         >
-          <img
-            src={imgSrc}
-            alt={`${title} screenshot`}
-            className="w-full h-40 object-contain"
-          />
+          {imgSrc && (
+            <img
+              src={imgSrc}
+              alt={`${title} screenshot`}
+              className="w-full h-40 object-contain"
+            />
+          )}
+          {videoSrc && (
+            <video controls className="w-full h-40 object-contain">
+              <source src={videoSrc} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
           <div className="p-3 bg-white">
             <h4 className="font-semibold">{title}</h4>
             <p className="text-sm text-gray-600">{description}</p>
+            {url && (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline text-sm"
+              >
+                View Project
+              </a>
+            )}
           </div>
         </div>
       ))}
     </div>
   );
 }
+
 
 // // components/ScreenshotGallery.jsx
 
