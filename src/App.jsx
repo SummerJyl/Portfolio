@@ -227,17 +227,39 @@ export default function App() {
 
           <div className="w-full md:flex-1">
         <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Tech Stack</span>}>
-          <div className="space-y-2">
-            {techStack.map(({ category, items }, idx) => (
-              <AccordionCard
-                key={idx}
-                title={<span className="text-gray-600 text-base font-semibold">{category}</span>}
-              >
-                <p className="text-sm text-gray-700">{items}</p>
-              </AccordionCard>
-            ))}
-          </div>
-        </AccordionCard>
+  <div className="space-y-2">
+    {techStack.map(({ category, items }, idx) => (
+      <AccordionCard
+        key={idx}
+        title={<span className="text-gray-600 text-base font-semibold">{category}</span>}
+      >
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '5px' }}>
+          {items.map(skill => (
+            <button
+              key={skill.name}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                background: '#3b82f6',
+                color: 'white',
+                border: 'none',
+                borderRadius: '20px',
+                padding: '8px 15px',
+                cursor: 'default',
+                fontSize: '14px'
+              }}
+            >
+              {skill.icon && <img src={skill.icon} alt={skill.name} width="20" />}
+              {skill.name}
+            </button>
+          ))}
+        </div>
+      </AccordionCard>
+    ))}
+  </div>
+</AccordionCard>
+
       </div>
       
         {/* Contact Modal */}

@@ -63,16 +63,16 @@ const skillCategories = {
 };
 
 
-export default function Skills() {
+export default function Skills({ techStack }) {
   return (
     <section style={{ marginBottom: '40px' }}>
       <h2>Tech Stack</h2>
       <div className="space-y-6">
-        {Object.entries(skillCategories).map(([category, skills]) => (
+        {techStack.map(({ category, items }) => ( 
           <div key={category}>
             <h3 className="text-lg font-semibold mb-2 text-gray-700">{category}</h3>
             <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-              {skills.map(skill => (
+              {items.map(skill => (
                 <button 
                   key={skill.name} 
                   style={{
