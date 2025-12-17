@@ -103,13 +103,13 @@ export default function App() {
       featured: true,
     },     {
       title: "Personal Finance Dashboard",
-      imgSrc: "/screenshots/responsive-pfd.jpeg",
+      imgSrc: "/PFS-screenshots/responsive-pfd.jpeg",
       description: "A full-stack financial data processing application with real-time analytics and dynamic visualization capabilities. Built with React frontend and Node.js backend to handle high-volume transaction data processing and performance optimization.",
       url: "https://yourlivepfdlink.com",
     },
     {
       title: "Bio Health Data Explorer",
-      imgSrc: `${import.meta.env.BASE_URL}BioHlth-screenshots/responsiveBHDE.png`,
+      imgSrc: "/BioHlth-screenshots/responsiveBHDE.png",
       description: "A comprehensive real-time data processing platform for scientific health data management. Built with distributed cloud architecture to handle high-volume, sensitive data processing workflows with regulatory compliance and performance optimization.",
       url: "https://yourlivebiohealthlink.com",
     },
