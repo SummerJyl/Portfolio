@@ -200,11 +200,11 @@ export default function App() {
 <p className="mt-4 text-gray-600 max-w-xl mx-auto">
   Hi, I'm Jylian Summers — Senior Full Stack Engineer with 10 years strong UX sensibilities - I don't just build features, intuitive user experiences backed by clean, maintainable code. 
   I also build scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL. 
-  AWS certified with expertise in cloud architecture, serverless applications, and distributed systems.building scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL.
 </p>
 
 <p className="text-gray-600 max-w-xl mx-auto">
-  I specialize in architecting APIs, optimizing databases, and delivering mission-critical applications for healthcare and complex domains. AWS certified with expertise in cloud architecture, serverless applications, and distributed systems.
+  I specialize in architecting APIs, optimizing databases, and delivering mission-critical applications for healthcare and complex domains. 
+  AWS certified with expertise in cloud architecture, serverless applications, and distributed systems.
 </p>
 
 <p className="text-gray-600 max-w-xl mx-auto">
