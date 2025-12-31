@@ -198,7 +198,9 @@ export default function App() {
       <h2 cclassName="text-3xl font-semibold text-emerald-700">Senior Full Stack Engineer | Bio Health Enthusiast</h2>
 
 <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-  Hi, I'm Jylian Summers — Senior Full Stack Engineer with 8+ years building scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL.
+  Hi, I'm Jylian Summers — Senior Full Stack Engineer with 10 years strong UX sensibilities - I don't just build features, intuitive user experiences backed by clean, maintainable code. 
+  I also build scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL. 
+  AWS certified with expertise in cloud architecture, serverless applications, and distributed systems.building scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL.
 </p>
 
 <p className="text-gray-600 max-w-xl mx-auto">
