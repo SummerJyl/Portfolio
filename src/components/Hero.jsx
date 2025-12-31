@@ -7,7 +7,8 @@ export default function Hero() {
       <h1 className="text-5xl font-bold mb-2">Jylian Summers</h1>
       <p className="text-xl text-gray-600">Senior Full-Stack Developer | Bio Health & Cloud Enthusiast</p>
       <p className="text-base text-gray-500 mt-4 max-w-3xl mx-auto px-4">
-        Hi, I’m Jylian Summers — Senior Full Stack Engineer with 8+ years building scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL. 
+        Hi, I’m Jylian Summers — Senior Full Stack Engineer with 10 years strong UX sensibilities - I don't just build features, intuitive user experiences backed by clean, maintainable code. 
+        I also build scalable, high-performance web applications using React, Node.js, Python, Ruby on Rails, and PostgreSQL. 
         AWS certified with expertise in cloud architecture, serverless applications, and distributed systems. 
         I specialize in architecting APIs, optimizing databases, and delivering mission-critical applications for healthcare and complex domains. 
         My work spans real-time data processing pipelines, microservices architecture, and AI-integrated workflows. 
