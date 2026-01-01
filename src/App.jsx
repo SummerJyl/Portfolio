@@ -212,8 +212,7 @@ export default function App() {
 </p>
 
 <p className="text-gray-600 max-w-xl mx-auto">
-  As a technical leader, I mentor teams, drive architectural decisions, and ship products that matter. 
-  Check out my work below—let's build something great together.
+  As a technical leader, I mentor teams, drive architectural decisions, and ship products that matter.
 </p>
 
 </section>
