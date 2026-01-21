@@ -37,7 +37,17 @@ const projects = [
     variants: {
     general: 'Healthcare portal authentication flow'
   }
+  },
+  {
+  title: 'DarbSound Film Database',
+  imgSrc: '/screenshots/darbsound-film-db.png',
+  url: 'https://darbsound-film-db.netlify.app',
+  tags: ['JavaScript', 'PostgreSQL', 'Supabase', 'TMDB API', 'Netlify'],
+  featured: true,
+  variants: {
+    general: 'Full-stack film collection platform managing 2,500+ films with intelligent search and one-click TMDB integration. Eliminated 100% of manual data entry through automated metadata enrichment, saving 10+ hours weekly.'
   }
+  },
 ];
 
 export default function Projects() {
