@@ -199,18 +199,15 @@ export default function App() {
 
 <p className="mt-4 text-gray-600 max-w-xl mx-auto">
   Hi, I'm Jylian Summers—a Senior Full Stack Engineer who builds software that people actually want to use.
-</p>
-
-<p className="text-gray-600 max-w-xl mx-auto">
   For the past 10 years, I've been crafting scalable web applications that balance exceptional user experience with rock-solid engineering. 
-  I work across the full stack with React, TypeScript, Node.js, Python, Ruby on Rails, and PostgreSQL, always asking: "Does this solve the real problem?"
+  I work across the full stack with React, TypeScript, Node.js, Python, Ruby on Rails, PostgreSQL, and Supabase.
 </p>
-
+<br></br>
 <p className="text-gray-600 max-w-xl mx-auto">
   I specialize in microservices architecture, cloud systems (AWS certified), and mission-critical applications for healthcare and complex domains. 
   Whether it's real-time data pipelines, API design, or AI-integrated workflows, I focus on building systems that perform under pressure and scale with your business.
 </p>
-
+<br></br>
 <p className="text-gray-600 max-w-xl mx-auto">
   As a technical leader, I mentor teams, drive architectural decisions, and ship products that matter.
 </p>

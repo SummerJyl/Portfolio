@@ -17,7 +17,7 @@ export default function Hero() {
       </p>
       <p className="text-gray-600 max-w-xl mx-auto">
       For the past 10 years, I've been crafting scalable web applications that balance exceptional user experience with rock-solid engineering. 
-      I work across the full stack with React, TypeScript, Node.js, Python, Ruby on Rails, and PostgreSQL, always asking: "Does this solve the real problem?"
+      I work across the full stack with React, TypeScript, Node.js, Python, Ruby on Rails, PostgreSQL, and Supabase.
       </p>
 
       <p className="text-gray-600 max-w-xl mx-auto">
