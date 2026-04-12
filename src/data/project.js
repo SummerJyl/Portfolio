@@ -48,6 +48,15 @@ const projects = [
     general: 'Full-stack film collection platform managing 2,800+ films with intelligent search and one-click TMDB integration. Eliminated 100% of manual data entry through automated metadata enrichment, saving 10+ hours weekly.'
   }
   },
+  {
+    title: 'Quest to Now',
+    imgSrc: '/screenshots/quest-to-now.png',
+    url: 'https://github.com/SummerJyl/QuestNow',
+    tags: ['JavaScript', 'HTML', 'CSS', 'Cordova', 'Mobile'],
+    variants: {
+      general: 'Browser-based mobile adventure game featuring myTribe, a companion system with 3 unique characters and layered quest progression across multiple locations.'
+    }
+  },
 ];
 
 export default function Projects() {
