@@ -6,7 +6,7 @@ echo "Adding all changes..."
 git add .
 
 echo "Committing changes..."
-read -m "Deploy updated build"
+read -p "Deploy updated build"
 git commit -m "Deploy updated build"
 
 echo "Pushing to main branch..."
