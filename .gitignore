@@ -17,7 +17,6 @@ Thumbs.db
 # Image and media folders (not necessary in Git if they're large or can be served via CDN)
 assets/
 videos/
-screenshots/
 BioHlth-screenshots/
 Bio Health Identity/
 screenshots responsive/
