@@ -113,56 +113,55 @@ export default function App() {
     }
   ];
   
-  // 1. Removed: const [contactOpen, setContactOpen] = useState(false);
-
   return (
-    <div
-      className="min-h-[100vh] flex flex-col text-gray-900 px-4 py-6 font-lato"
-      style={{
-        backgroundImage: `url('${import.meta.env.BASE_URL}images/bg-hero.png')`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center top',
-      }}
-    >
-      {/* Navbar */}
-      <nav className="flex flex-col items-center px-6 py-4 border-b border-gray-300 space-y-2">
-        <h1 className="text-4xl font-bold text-emerald-700 font-playfair text-center md:text-left">
-          Jylian Summers
-        </h1>
-        <div className="flex items-center space-x-4 text-emerald-700">
-          {/* 2. Changed from <button> to <a> for direct email */}
-          <a
-            href="mailto:jylians.dev@gmail.com"
-            className="hover:text-emerald-900 transition"
-            aria-label="Email Jylian"
-            title="jylians.dev@gmail.com"
-          >
-            <FaEnvelope size={20} />
-          </a>
-          <a
-            href="https://github.com/SummerJyl"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="hover:text-emerald-900 transition"
-          >
-            <FaGithub size={20} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jyliansummers/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="hover:text-emerald-900 transition"
-          >
-            <FaLinkedin size={20} />
-          </a>
-        </div>
-      </nav>
+  <div
+    className="min-h-[100vh] flex flex-col text-gray-900 px-4 py-6 font-lato"
+    style={{
+      backgroundImage: `url('${import.meta.env.BASE_URL}images/bg-hero.png')`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center top',
+    }}
+  >
 
-      {/* Main content */}
-      <main className="flex-grow max-w-5xl mx-auto px-4 py-6 flex flex-col">
+        {/* Navbar */}
+        <nav className="flex flex-col items-center px-6 py-4 border-b border-gray-300 space-y-2">
+          <h1 className="text-4xl font-bold text-emerald-700 font-playfair text-center md:text-left">
+          Jylian Summers
+          </h1>
+  <div className="flex items-center space-x-4 text-emerald-700">
+    <button
+      onClick={() => setContactOpen(true)}
+      className="hover:text-emerald-900 transition"
+      aria-label="Contact"
+    >
+      <FaEnvelope size={20} />
+    </button>
+    <a
+      href="https://github.com/SummerJyl"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+      className="hover:text-emerald-900 transition"
+    >
+      <FaGithub size={20} />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/jyliansummers/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      className="hover:text-emerald-900 transition"
+    >
+      <FaLinkedin size={20} />
+    </a>
+  </div>
+</nav>
+
+
+        {/* Main content flex-grow to fill space */}
+        <main className="flex-grow max-w-5xl mx-auto px-4 py-6 flex flex-col">
+
         {/* Hero Section */}
         <section className="text-center mb-8">
           <img
@@ -170,17 +169,86 @@ export default function App() {
             alt="Jylian Summers"
             className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
           />
-          <h2 className="text-3xl font-semibold text-emerald-700">Senior Full Stack Engineer | Bio Health Enthusiast</h2>
-          {/* ... bio text content ... */}
-        </section>
+      <h2 cclassName="text-3xl font-semibold text-emerald-700">Senior Full Stack Engineer | Bio Health Enthusiast</h2>
+
+<p className="mt-4 text-gray-600 max-w-xl mx-auto">
+  Hi, I'm Jylian Summers—a Senior Full Stack Engineer who builds software that people actually want to use.
+  For the past 10 years, I've been crafting scalable web applications that balance exceptional user experience with rock-solid engineering. 
+  I work across the full stack with React, TypeScript, Node.js, Python, Ruby on Rails, PostgreSQL, and Supabase.
+</p>
+<br></br>
+<p className="text-gray-600 max-w-xl mx-auto">
+  I specialize in microservices architecture, cloud systems (AWS certified), and mission-critical applications for healthcare and complex domains. 
+  Whether it's real-time data pipelines, API design, or AI-integrated workflows, I focus on building systems that perform under pressure and scale with your business.
+</p>
+<br></br>
+<p className="text-gray-600 max-w-xl mx-auto">
+  As a technical leader, I mentor teams, drive architectural decisions, and ship products that matter.
+</p>
+
+</section>
 
         {/* Content Sections */}
         <div className="flex flex-col md:flex-row md:justify-between gap-6 mb-6 w-full">
-          {/* Projects, Experience, Open Source, and Tech Stack cards... */}
-        </div>
+          <div className="w-full md:flex-1">
+            <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Projects</span>}>
+              <ProjectsDropdown projects={projects} />
+            </AccordionCard>
+          </div>
 
-        {/* 3. Removed: {contactOpen && <ContactModal onClose={() => setContactOpen(false)} />} */}
-      </main>
-    </div>
-  );
-}
+          <div className="w-full md:flex-1">
+            <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Experience</span>}>
+              <Experience />
+            </AccordionCard>
+          </div>
+
+          <div className="w-full md:flex-1">
+          <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Open Source</span>}>
+            <OpenSource />
+          </AccordionCard>
+          </div>
+
+          <div className="w-full md:flex-1">
+        <AccordionCard title={<span className="text-emerald-700 text-lg font-semibold">Tech Stack</span>}>
+  <div className="space-y-2">
+    {techStack.map(({ category, items }, idx) => (
+      <AccordionCard
+        key={idx}
+        title={<span className="text-gray-600 text-base font-semibold">{category}</span>}
+      >
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '5px' }}>
+          {items.map(skill => (
+            <button
+              key={skill.name}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                background: '#3b82f6',
+                color: 'white',
+                border: 'none',
+                borderRadius: '20px',
+                padding: '8px 15px',
+                cursor: 'default',
+                fontSize: '14px'
+              }}
+            >
+              {skill.icon && <img src={skill.icon} alt={skill.name} width="20" />}
+              {skill.name}
+            </button>
+          ))}
+        </div>
+      </AccordionCard>
+    ))}
+  </div>
+</AccordionCard>
+
+      </div>
+      
+        {/* Contact Modal */}
+        {contactOpen && <ContactModal onClose={() => setContactOpen(false)} />}
+        </div>
+        </main>
+        </div>
+    );
+  }
