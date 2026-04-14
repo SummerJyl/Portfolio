@@ -96,6 +96,8 @@ export const techStack = [
 export default function App() {
   const projects = projectData;
 
+  const [contactOpen, setContactOpen] = useState(false);
+
   const openSourceContributions = [
     {
       title: "ProyectoElden - Sports Booking Platform",
@@ -170,7 +172,7 @@ export default function App() {
             alt="Jylian Summers"
             className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
           />
-      <h2 cclassName="text-3xl font-semibold text-emerald-700">Senior Full Stack Engineer | Bio Health Enthusiast</h2>
+      <h2 className="text-3xl font-semibold text-emerald-700">Senior Full Stack Engineer | Bio Health Enthusiast</h2>
 
 <p className="mt-4 text-gray-600 max-w-xl mx-auto">
   Hi, I'm Jylian Summers—a Senior Full Stack Engineer who builds software that people actually want to use.
