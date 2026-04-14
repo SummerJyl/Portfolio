@@ -11,7 +11,7 @@ export const projects = [
 },
   {
   title: 'DarbSound Film Database',
-  imgSrc:'./DarbSound-Film-screenshots/darbsound-film-db.png',
+  imgSrc: './screenshots/darbsound-film-db.png',
   url: 'https://darbsound-film-db.netlify.app',
   tags: ['JavaScript', 'PostgreSQL', 'Supabase', 'TMDB API', 'Netlify'],
   featured: true,
