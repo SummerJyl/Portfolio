@@ -7,5 +7,7 @@
 			"path": "../../All/SDCCD CE/Portfolio/Bio Health"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portfolio"
+	}
 }
