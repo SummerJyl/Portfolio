@@ -14,12 +14,12 @@ export default function Navbar() {
 
         {/* Right side: Contact, GitHub, LinkedIn */}
         <div className="flex items-center space-x-4">
-          <button
-            onClick={() => setShowContact(true)}
+          <a
+            href="mailto:jylians.dev@gmail.com"
             className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition"
           >
-            Contact
-          </button>
+            Email
+          </a>
           <a
             href="https://github.com/SummerJyl"
             target="_blank"
