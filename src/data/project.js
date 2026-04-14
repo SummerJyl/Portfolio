@@ -1,6 +1,4 @@
-import React from 'react';
-
-const projects = [
+export const projects = [
   {
     title: 'Azure Microservices Demo',
     imgSrc: '/screenshots/azure-microservices.png',
@@ -50,7 +48,7 @@ const projects = [
   },
 ];
 
-export default function Projects() {
+/* export default function Projects() {
   return (
     <section style={{ marginBottom: '40px' }}>
       <h2>Projects</h2>
@@ -103,3 +101,4 @@ export default function Projects() {
     </section>
   );
 }
+*/
