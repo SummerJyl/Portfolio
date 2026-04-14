@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     title: 'Quest to Now',
-    imgSrc: '/screenshots/quest-to-now.png',
+    imgSrc: './screenshots/quest-to-now.png',
     url: 'https://github.com/SummerJyl/QuestNow',
     tags: ['JavaScript', 'HTML', 'CSS', 'Cordova', 'Mobile'],
     variants: {
