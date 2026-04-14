@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Azure Microservices Demo',
-    imgSrc: '/screenshots/azure-microservices.png',
+    imgSrc: './screenshots/azure-microservices.png',
     url: 'https://github.com/SummerJyl/azure-microservices-demo',
     tags: ['TypeScript', 'Azure', 'Redis', 'Docker', 'Node.js'],
     featured: true,
@@ -11,7 +11,7 @@ export const projects = [
 },
   {
   title: 'DarbSound Film Database',
-  imgSrc:'/DarbSound-Film-screenshots/darbsound-film-db.png',
+  imgSrc:'./DarbSound-Film-screenshots/darbsound-film-db.png',
   url: 'https://darbsound-film-db.netlify.app',
   tags: ['JavaScript', 'PostgreSQL', 'Supabase', 'TMDB API', 'Netlify'],
   featured: true,
