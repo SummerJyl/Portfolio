@@ -30,7 +30,7 @@ export const projects = [
   },
   {
     title: 'Bio Health Data Explorer',
-    imgSrc: '/screenshots/bhde-app.png',
+    imgSrc: './screenshots/bhde-app.png',
     url: 'https://github.com/SummerJyl/Data-Explore',
     tags: ['React', 'Spring Boot', 'PostgreSQL', 'TypeScript', 'REST API'],
     variants: {
