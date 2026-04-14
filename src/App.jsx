@@ -5,7 +5,7 @@ import Experience from './components/Experience';
 import AccordionCard from './components/AccordionCard';
 import OpenSource from './components/OpenSource';
 import ProjectsDropdown from './components/ProjectsDropdown';
-import { projects as projectData } from './data/projects';
+import { projects as projectData } from './data/project.js';
 import ContactModal from './components/ContactModal';
 import ScreenshotGallery from './components/ScreenshotGallery';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
