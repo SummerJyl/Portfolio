@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Azure Microservices Demo',
-    imgSrc: '/screenshots/azure-microservices.png',
+    imgSrc: '/Portfolio/screenshots/azure-microservices.png',
     url: 'https://github.com/SummerJyl/azure-microservices-demo',
     tags: ['TypeScript', 'Azure', 'Redis', 'Docker', 'Node.js'],
     featured: true,
@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     title: 'DarbSound Film Database',
-    imgSrc: '/screenshots/darbsound-film-db.png',
+    imgSrc: '/Portfolio/screenshots/darbsound-film-db.png',
     url: 'https://darbsound-film-db.netlify.app',
     tags: ['JavaScript', 'PostgreSQL', 'Supabase', 'TMDB API', 'Netlify'],
     featured: true,
@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     title: 'Quest to Now',
-    imgSrc: '/screenshots/quest-to-now.png',
+    imgSrc: '/Portfolio/screenshots/quest-to-now.png',
     url: 'https://github.com/SummerJyl/QuestNow',
     tags: ['JavaScript', 'HTML', 'CSS', 'Cordova', 'Mobile'],
     variants: {
@@ -30,7 +30,7 @@ export const projects = [
   },
   {
     title: 'Bio Health Data Explorer',
-    imgSrc: '/screenshots/bhde-app.png',
+    imgSrc: '/Portfolio/screenshots/bhde-app.png',
     url: 'https://github.com/SummerJyl/Data-Explore',
     tags: ['React', 'Spring Boot', 'PostgreSQL', 'TypeScript', 'REST API'],
     variants: {
