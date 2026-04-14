@@ -36,7 +36,7 @@ export default function ProjectModal({ project, onClose }) {
         <img 
           src={project.imgSrc} 
           alt={project.title} 
-          className="w-full max-h-[500px] object-contain rounded mb-4"
+          className="mx-auto max-h-[50vh] w-auto object-contain rounded-lg shadow-md mb-4"
         />
         )}
 
