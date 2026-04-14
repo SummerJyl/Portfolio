@@ -6,6 +6,7 @@ import AccordionCard from './components/AccordionCard';
 import OpenSource from './components/OpenSource';
 import ProjectsDropdown from './components/ProjectsDropdown';
 import { projects as projectData } from './data/project.js';
+import Navbar from './components/Navbar';
 import ContactModal from './components/ContactModal';
 import ScreenshotGallery from './components/ScreenshotGallery';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
