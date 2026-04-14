@@ -12,6 +12,25 @@ const projects = [
   }
 },
   {
+  title: 'DarbSound Film Database',
+  imgSrc:'/DarbSound-Film-screenshots/darbsound-film-db.png',
+  url: 'https://darbsound-film-db.netlify.app',
+  tags: ['JavaScript', 'PostgreSQL', 'Supabase', 'TMDB API', 'Netlify'],
+  featured: true,
+  variants: {
+    general: 'Full-stack film collection platform managing 2,800+ films with intelligent search and one-click TMDB integration. Eliminated 100% of manual data entry through automated metadata enrichment, saving 10+ hours weekly.'
+  }
+  },
+  {
+    title: 'Quest to Now',
+    imgSrc: '/screenshots/quest-to-now.png',
+    url: 'https://github.com/SummerJyl/QuestNow',
+    tags: ['JavaScript', 'HTML', 'CSS', 'Cordova', 'Mobile'],
+    variants: {
+      general: 'Browser-based mobile RPG featuring myTribe — a companion system with 3 unique characters. Battle through 6 locations, earn gold, and claim a region for your Tribe!'
+    }
+  },
+  {
     title: 'Bio Health Data Explorer',
     imgSrc: '/screenshots/bhde-app.png',
     url: 'https://github.com/SummerJyl/Data-Explore',
@@ -21,31 +40,12 @@ const projects = [
     }
   },
   {
-    title: 'Personal Finance Dashboard',
-    imgSrc: '/screenshots/responsive-pfd.jpeg',
-    url: 'https://your-pfd-project-link.com',
-    tags: ['React', 'UI/UX'],
-    variants: {
-    general: 'Responsive financial tracking application'
-    }
-  },
-  {
     title: 'Patient Login Prototype',
     videoSrc: '/videos/patLoginDemo.mp4',
     url: 'https://your-pfd-project-link.com',
     tags: ['React', 'Healthcare'],
     variants: {
     general: 'Healthcare portal authentication flow'
-  }
-  },
-  {
-  title: 'DarbSound Film Database',
-  imgSrc:'/DarbSound-Film-screenshots/darbsound-film-db.png',
-  url: 'https://darbsound-film-db.netlify.app',
-  tags: ['JavaScript', 'PostgreSQL', 'Supabase', 'TMDB API', 'Netlify'],
-  featured: true,
-  variants: {
-    general: 'Full-stack film collection platform managing 2,800+ films with intelligent search and one-click TMDB integration. Eliminated 100% of manual data entry through automated metadata enrichment, saving 10+ hours weekly.'
   }
   },
 ];
