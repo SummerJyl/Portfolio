@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import ContactModal from './ContactModal';
+// import React, { useState } from 'react';
+// import ContactModal from './ContactModal';
 
 // export default function Navbar() {
 //   const [showContact, setShowContact] = useState(false);
