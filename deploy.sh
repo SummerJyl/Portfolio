@@ -5,14 +5,16 @@
 echo "Adding all changes..."
 git add .
 
+echo "Enter commit message:"
+read -r commit_message
+
 echo "Committing changes..."
-read -p "Deploy updated build"
-git commit -m "Deploy updated build"
+git commit -m "$commit_message"
 
 echo "Pushing to main branch..."
 git push origin main
 
-echo "Running deployment script..."
+echo "Building and deploying to GitHub Pages..."
 npm run deploy
 
-echo "Deployment complete! Check your GitHub Pages site."
+echo "✅ Deployment complete! Check: https://summerjyl.github.io/Portfolio/"
