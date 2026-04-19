@@ -29,12 +29,12 @@ export const projects = [
     }
   },
   {
-    title: 'Bio Health Data Explorer',
-    imgSrc: '/Portfolio/screenshots/bhde-app.png',
-    url: 'https://github.com/SummerJyl/Data-Explore',
-    tags: ['React', 'Spring Boot', 'PostgreSQL', 'TypeScript', 'REST API'],
+    title: 'NutriSight',
+    imgSrc: '/Portfolio/screenshots/nutrisight.png',
+    url: 'https://github.com/SummerJyl/NutriSight',
+    tags: ['React', 'TypeScript', 'Python', 'FastAPI', 'D3.js', 'PostgreSQL', 'scikit-learn'],
     variants: {
-      general: 'Full-stack nutrition tracking platform with USDA food database integration.'
+      general: 'ML-powered nutrition platform with real-time glucose pattern analysis. Python/FastAPI microservice delivers health insights — spike detection, time-of-day trends — to a React/D3.js frontend.'
     }
   },
   {
