@@ -1,13 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../../All/SDCCD CE/Portfolio/Bio Health"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Portfolio"
-	}
+    "folders": [
+        {
+            "path": "Notes/dev-snippets"
+        }
+    ]
 }
