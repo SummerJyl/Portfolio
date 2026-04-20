@@ -1,1 +1,0 @@
-To prevent deploying code with undefined variables (e.g., contactOpen), incorporate a linting step into the build pipeline. Using npm run lint && vite build ensures that syntax and reference errors stop the deployment immediately.
